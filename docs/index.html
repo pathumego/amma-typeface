@@ -246,9 +246,6 @@
         .buttonSpecial:hover { background: #d0d6f0; }
         .clear { clear: both; }
 
-        /* ---- Vowel modifier panel ---- */
-        #vowelmodifiers { visibility: hidden; }
-
         /* ---- Footer actions ---- */
         div.footer {
             text-align: center;
@@ -778,9 +775,9 @@
         // Reset modifier state for both keyboards
         prevchar = '';
         keyclass = 'normal';
-        document.getElementById('vowelmodifiers').style.visibility = 'hidden';
+        document.getElementById('vowelmodifiers').style.display = 'none';
         document.getElementById('compoundchars').style.visibility = 'hidden';
-        document.getElementById('ta-vowelmodifiers').style.visibility = 'hidden';
+        document.getElementById('ta-vowelmodifiers').style.display = 'none';
     };
 
     /* ---- Add character ---- */
@@ -799,20 +796,20 @@
                     document.getElementById('compoundchars').style.visibility = 'visible';
                 }
                 updatekeyboard(prevchar + character, keyclass);
-                document.getElementById('vowelmodifiers').style.visibility = 'visible';
+                document.getElementById('vowelmodifiers').style.display = 'inline-block';
                 prevchar = character;
             } else {
-                document.getElementById('vowelmodifiers').style.visibility = 'hidden';
+                document.getElementById('vowelmodifiers').style.display = 'none';
                 document.getElementById('compoundchars').style.visibility = 'hidden';
             }
         } else {
             // Tamil
             if (type >= 1) {
                 updateTamilKeyboard(prevchar + character);
-                document.getElementById('ta-vowelmodifiers').style.visibility = 'visible';
+                document.getElementById('ta-vowelmodifiers').style.display = 'inline-block';
                 prevchar = character;
             } else {
-                document.getElementById('ta-vowelmodifiers').style.visibility = 'hidden';
+                document.getElementById('ta-vowelmodifiers').style.display = 'none';
             }
         }
     };
@@ -884,9 +881,9 @@
         draw();
         prevchar = '';
         keyclass = 'normal';
-        document.getElementById('vowelmodifiers').style.visibility = 'hidden';
+        document.getElementById('vowelmodifiers').style.display = 'none';
         document.getElementById('compoundchars').style.visibility = 'hidden';
-        document.getElementById('ta-vowelmodifiers').style.visibility = 'hidden';
+        document.getElementById('ta-vowelmodifiers').style.display = 'none';
     };
 
     /* ---- Canvas ---- */
