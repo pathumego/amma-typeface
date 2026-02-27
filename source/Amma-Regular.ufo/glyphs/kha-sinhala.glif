@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kha-sinhala" format="2">
+	<unicode hex="0D9B"/>
+	<advance width="1072"/>
+	<outline>
+		<component base="ka-sinhala"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-02-21 06:00:15 +0000</string>
+		</dict>
+	</lib>
+</glyph>

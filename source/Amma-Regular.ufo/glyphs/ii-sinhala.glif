@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ii-sinhala" format="2">
+	<unicode hex="0D8A"/>
+	<advance width="1043"/>
+	<outline>
+		<contour>
+			<point x="439" y="429" type="curve" smooth="yes"/>
+			<point x="409" y="429"/>
+			<point x="384" y="454"/>
+			<point x="384" y="484" type="curve" smooth="yes"/>
+			<point x="384" y="514"/>
+			<point x="409" y="540"/>
+			<point x="439" y="540" type="curve" smooth="yes"/>
+			<point x="469" y="540"/>
+			<point x="495" y="514"/>
+			<point x="495" y="484" type="curve" smooth="yes"/>
+			<point x="495" y="454"/>
+			<point x="469" y="429"/>
+		</contour>
+		<contour>
+			<point x="874" y="429" type="curve" smooth="yes"/>
+			<point x="844" y="429"/>
+			<point x="819" y="454"/>
+			<point x="819" y="484" type="curve" smooth="yes"/>
+			<point x="819" y="514"/>
+			<point x="844" y="540"/>
+			<point x="874" y="540" type="curve" smooth="yes"/>
+			<point x="904" y="540"/>
+			<point x="930" y="514"/>
+			<point x="930" y="484" type="curve" smooth="yes"/>
+			<point x="930" y="454"/>
+			<point x="904" y="429"/>
+		</contour>
+		<component base="ra-sinhala"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-12-17 06:03:46 +0000</string>
+			<key>public.markColor</key>
+			<string>0.97,0.9,0,1</string>
+		</dict>
+	</lib>
+</glyph>

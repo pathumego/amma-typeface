@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sinMatraOo.pstf" format="2">
+	<advance width="524"/>
+	<outline>
+		<component base="aaMatra-sinhala"/>
+		<component base="virama-sinhala" xOffset="343" yOffset="57"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-12-17 06:01:13 +0000</string>
+			<key>public.markColor</key>
+			<string>0.97,0.9,0,1</string>
+		</dict>
+	</lib>
+</glyph>

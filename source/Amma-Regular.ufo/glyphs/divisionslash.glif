@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="divisionslash" format="2">
+	<unicode hex="2215"/>
+	<advance width="623"/>
+	<outline>
+		<contour>
+			<point x="-12" y="48" type="line"/>
+			<point x="570" y="733" type="line"/>
+			<point x="636" y="679" type="line"/>
+			<point x="53" y="-6" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-02-20 19:37:35 +0000</string>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,329 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:\.DS_Store
+FileLength:6148
+FileModTime:1389564395
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialMT
+FamilyName:Arial
+StyleName:Regular
+MenuName:Arial
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Arial
+WritingScript:Roman
+OutlineFileName:\Arial.ttf
+DataFormat:sfntData
+FileLength:774476
+FileModTime:1274745957
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FMBasurux
+FamilyName:FMBasuru
+StyleName:x
+MenuName:FMBasuru
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:FMBasuru x
+WritingScript:Roman
+OutlineFileName:\FM - Basuru x.TTF
+DataFormat:sfntData
+FileLength:74316
+FileModTime:920270404
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FMGemunux
+FamilyName:FMGemunu
+StyleName:x
+MenuName:FMGemunu
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:FMGemunu x
+WritingScript:Roman
+OutlineFileName:\FM - Gemunu x.TTF
+DataFormat:sfntData
+FileLength:69120
+FileModTime:920271350
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FMAbhayax
+FamilyName:FMAbhaya
+StyleName:x
+MenuName:FMAbhaya
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:FMAbhaya x
+WritingScript:Roman
+OutlineFileName:\FM-Abhaya.TTF
+DataFormat:sfntData
+FileLength:87160
+FileModTime:1330459999
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FMMalithix
+FamilyName:FMMalithi
+StyleName:x
+MenuName:FMMalithi
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:FMMalithi x
+WritingScript:Roman
+OutlineFileName:\FM_MALIT.TTF
+DataFormat:sfntData
+FileLength:87904
+FileModTime:1367924931
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Inconsolata
+FamilyName:Inconsolata
+StyleName:Medium
+MenuName:Inconsolata
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Inconsolata
+WritingScript:Roman
+OutlineFileName:\Inconsolata.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:58464
+FileModTime:1370802687
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MalithiWeb
+FamilyName:Malithi Web
+StyleName:Regular
+MenuName:Malithi Web
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Malithi Web
+WritingScript:Roman
+OutlineFileName:\Malithi Web.ttf
+DataFormat:sfntData
+FileLength:158156
+FileModTime:1354880792
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:231312
+FileModTime:1328715145
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+MenuName:Myriad Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Myriad Pro
+WritingScript:Roman
+OutlineFileName:\MyriadPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:94360
+FileModTime:1333908034
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SinhalaMN
+FamilyName:Sinhala MN
+StyleName:Regular
+MenuName:Sinhala MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Sinhala MN
+WritingScript:Roman
+OutlineFileName:\Sinhala MN.ttc
+TTCOffset:32
+DataFormat:sfntData
+FileLength:1467868
+FileModTime:1343676627
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SinhalaMN-Bold
+FamilyName:Sinhala MN
+StyleName:Bold
+MenuName:Sinhala MN
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Sinhala MN Bold
+WritingScript:Roman
+OutlineFileName:\Sinhala MN.ttc
+TTCOffset:332
+DataFormat:sfntData
+FileLength:1467868
+FileModTime:1343676627
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TamilMN
+FamilyName:Tamil MN
+StyleName:Regular
+MenuName:Tamil MN
+StyleBits:0
+WeightClass:250
+WidthClass:5
+AngleClass:0
+FullName:Tamil MN
+WritingScript:Roman
+OutlineFileName:\Tamil MN.ttc
+TTCOffset:32
+DataFormat:sfntData
+FileLength:400164
+FileModTime:1343676627
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TamilMN-Bold
+FamilyName:Tamil MN
+StyleName:Bold
+MenuName:Tamil MN
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Tamil MN Bold
+WritingScript:Roman
+OutlineFileName:\Tamil MN.ttc
+TTCOffset:332
+DataFormat:sfntData
+FileLength:400164
+FileModTime:1343676627
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TamilSangamMN
+FamilyName:Tamil Sangam MN
+StyleName:Regular
+MenuName:Tamil Sangam MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Tamil Sangam MN
+WritingScript:Roman
+OutlineFileName:\Tamil Sangam MN.ttc
+TTCOffset:32
+DataFormat:sfntData
+FileLength:338136
+FileModTime:1343676627
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TamilSangamMN-Bold
+FamilyName:Tamil Sangam MN
+StyleName:Bold
+MenuName:Tamil Sangam MN
+StyleBits:0
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Tamil Sangam MN Bold
+WritingScript:Roman
+OutlineFileName:\Tamil Sangam MN.ttc
+TTCOffset:332
+DataFormat:sfntData
+FileLength:338136
+FileModTime:1343676627
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KohinoorTamil-Demi
+FamilyName:Kohinoor Tamil 
+StyleName:Demi
+MenuName:Kohinoor Tamil 
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:KohinoorTamil-Demi
+WritingScript:Roman
+OutlineFileName:\test.ttf
+DataFormat:sfntData
+FileLength:200388
+FileModTime:1373765650
+%EndFont
+
