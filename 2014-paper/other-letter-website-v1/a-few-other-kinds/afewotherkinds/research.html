@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Research - A Few Other Kinds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Research materials from the A Few Other Kinds project">
+<meta name="author" content="Pathum Egodawatta">
+<meta property="og:image" content="images/avatar.png"/>
+<meta property="og:title" content="A Few Other Kinds - Research"/>
+<meta property="og:site_name" content="A Few Other Kinds"/>
+<meta property="og:type" content="website"/>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="scripts/client-side.js"></script>
+
+<script type="text/javascript">
+ $(function() {
+    $('a.slideto').bind('click',function(event){
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000,'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+</script>
+
+<!-- Loading Bootstrap -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Loading Flat UI -->
+<link href="css/flat-ui.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet">
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+<![endif]-->
+<style type="text/css">
+img { border:none; }
+</style>
+</head>
+<body>
+
+<div id="sitename">
+  <h1><a href="index.html">a<br/>few<br/>other<br/>kinds:</a></h1>
+</div>
+
+<div class="container">
+  <div id="about" class="row">
+    <div class="span3" style="position: fixed;">
+      <div id="page_sidebar">
+        Research materials from the project.
+      </div>
+    </div>
+    <div class="span3"></div>
+
+    <div class="span9">
+      <div class="demo-browser-action">
+        <h3>Research</h3>
+        <p>Documents, links, references and user research material from the development of the hybrid Sinhala-Tamil typeface project.</p>
+
+        <div class="content_slim">
+          <div class='story'>
+            <h3>Language Research</h3>
+            <p>Both Sinhala and Tamil writing systems descend from the ancient Brahmi script. Despite their apparent visual differences, they share common structural principles and phonetic foundations. This research explores those connections as a basis for creating hybrid letterforms.</p>
+          </div>
+
+          <div class='story'>
+            <h3>Visual Analysis</h3>
+            <p>A detailed visual analysis comparing the stroke patterns, proportions, and structural elements of both Sinhala and Tamil scripts, identifying shared characteristics that could form the basis of hybrid characters.</p>
+            <img src="images/proccess/4.png" style="max-width:100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /container -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <a href="mailto:pathumego@gmail.com?Subject=Few%20other%20Kinds" target="_blank">Drop a message</a>
+        <p>
+          <div id="share-buttons">
+            <a href="http://www.facebook.com/sharer.php?u=http://la-ulu.com/afewotherkinds" target="_blank"><img class="socialbtn" src="images/social/facebook.png" alt="Facebook" /></a>
+            <a href="http://twitter.com/share?url=http://la-ulu.com/afewotherkinds&text=Sinhala and Tamil Hybrid letters" target="_blank"><img class="socialbtn" src="images/social/twitter.png" alt="Twitter" /></a>
+            <a href="https://plus.google.com/share?url=http://la-ulu.com/afewotherkinds" target="_blank"><img class="socialbtn" src="images/social/google.png" alt="Google" /></a>
+          </div>
+        </p>
+        <p>This website was designed and developed by Pathum Egodawatta. All rights reserved. &copy; Pathum Egodawatta</p>
+      </div>
+      <div class="span5">
+        <p><a href="index.html">&larr; Back to home</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/application.js"></script>
+</body>
+</html>

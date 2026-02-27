@@ -1,0 +1,418 @@
+/* 
+Amma Project Microsite
+
+ * --------------------------------------- */
+
+@CHARSET "ISO-8859-1";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssinhala.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstamil.css);
+
+
+/* Reset CSS
+ * --------------------------------------- */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,
+img {
+    border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong {
+    font-weight: bold;
+}
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+caption,
+th {
+    text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+q:before,
+q:after {
+    content: '';
+}
+abbr,
+acronym {
+    border: 0;
+}
+/* Fonts
+ * --------------------------------------- */
+
+/* Webfont: NidahasFMAbhaya-Bold */
+
+@font-face {
+    font-family: 'NidahasFMAbhaya';
+    src: url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.svg#NidahasFMAbhaya-Bold') format('svg');
+    /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: NidahasFMAbhaya-Regular */
+
+@font-face {
+    font-family: 'NidahasFMAbhaya';
+    src: url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/NidahasFMAbhaya/NidahasFMAbhaya-Regular.svg#NidahasFMAbhaya-Regular') format('svg');
+    /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Amma-Regular */
+
+@font-face {
+	font-family:'Amma-Regular';
+	src: url('../fonts/amma/Amma.eot');
+	src: url('../fonts/amma/Amma.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/amma/Amma.woff') format('woff'),
+		url('../fonts/amma/Amma.ttf') format('truetype'),
+		url('../fonts/amma/Amma.svg#Amma-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	
+}
+
+/* Webfont: SriTamil*/
+
+@font-face {
+	font-family:'SriTamil-Reg';
+	src: url('../fonts/sritamil/SriTamil-Reg_gdi.eot');
+	src: url('../fonts/sritamil/SriTamil-Reg_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/sritamil/SriTamil-Reg_gdi.woff') format('woff'),
+		url('../fonts/sritamil/SriTamil-Reg_gdi.ttf') format('truetype'),
+		url('../fonts/sritamil/SriTamil-Reg_gdi.otf') format('opentype'),
+		url('../fonts/sritamil/SriTamil-Reg_gdi.svg#SriTamil-Reg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	
+}
+
+@font-face {
+	font-family:'SriTamil-Bold';
+	src: url('../fonts/sritamil/SriTamil-Bold_gdi.eot');
+	src: url('../fonts/sritamil/SriTamil-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/sritamil/SriTamil-Bold_gdi.woff') format('woff'),
+		url('../fonts/sritamil/SriTamil-Bold_gdi.ttf') format('truetype'),
+		url('../fonts/sritamil/SriTamil-Bold_gdi.otf') format('opentype'),
+		url('../fonts/sritamil/SriTamil-Bold_gdi.svg#SriTamil-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+
+body {
+    font-family: 'Cabin', sans-serif;
+    color: #333;
+    
+}
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    position: relative;
+}
+h1.en {
+
+font-family: 'Vesper Libre', serif;
+font-weight: 500;
+font-size: 2.01em;
+margin-top: 30px;
+line-height: 1.2;
+}
+h1.si {
+    font-size: 2.2em;
+    font-family: 'NidahasFMAbhaya', serif;
+    font-weight: bold;
+    margin: 10px 0px 5px 0px;
+}
+h1.ta {
+    font-size: 1.9em;
+ font-family: 'SriTamil-Bold', serif;
+    font-weight: bold;
+
+}
+h2 {
+    font-size: 2em;
+}
+p {
+    font-size: 1em;
+}
+.intro p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section {
+    text-align: center;
+padding:40px;
+}
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+#menu li.active a:hover {
+    color: #000;
+}
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+#menu li.active a {
+    color: #fff;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: square;
+    text-align: left;
+}
+
+
+::-webkit-input-placeholder {
+padding-top:5px;   
+ color: #D46B6B;
+ font-size:20px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+padding-top:5px;   
+ color: #BF5E5E;
+ font-size:20px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+padding-top:5px;   
+ color: #BF5E5E;
+ font-size:20px;
+}
+:-ms-input-placeholder {  
+padding-top:5px;   
+ color: #BF5E5E;
+ font-size:20px;
+}
+
+/* home
+-----------------------------------------*/
+
+.circle{
+font-family:'Amma-Regular';
+font-size: 72px;
+color: #FFF;
+border-radius: 50%;
+width: 300px;
+background: #F00;
+padding-top: 99px;
+height: 300px;
+    margin: 0 auto;
+	/* width and height can be anything, as long as they're equal */
+}
+
+  
+.home {
+margin-top:0px;
+padding:80px;
+ background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left; 
+}
+
+
+.descriptor_en{  font-family: 'Vesper Libre', serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;}
+.descriptor_si{font-family: 'NidahasFMAbhaya', serif; font-weight: bold; font-size:18px;line-height: 1.5;background:#fff;}
+.descriptor_ta{font-family: 'SriTamil-Bold' , serif; font-weight: bold; font-size:18px;line-height: 1.5;}
+
+/* Trial Page
+-----------------------------------------*/
+
+
+#input_canvas {
+    max-width: 100%;
+    height: auto;
+background:url(../images/ex_1.svg) red;
+ background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+
+#try_input{
+ width: 100%;
+  height: 60px;
+font-family: 'Noto Sans Sinhala', sans-serif;
+  text-align: center;
+  clear: both;
+  display: block;
+  font-size: 30px;
+  background:#892121;
+  color: #fff;
+  border: None;
+
+}
+
+#showDiv a{
+background: #4D4D4D;
+  padding: 20px;
+  height: 60px;
+  display: block;
+  color: #FFF;
+}
+#showDiv a:hover{
+ background:#444;
+color:#fff;
+cursor: pointer; 
+cursor: hand; 
+}
+
+#showDiv a:visited{
+color:#000;
+
+}
+
+.red{
+background:red;
+}
+
+
+/* train page
+
+-----------------------------------------*/
+#train_tri {
+width: 100%;
+padding: 50px 0px 43px 0px;
+background: url(../images/concrete_seamless.png);
+text-shadow: -1px -1px 13px rgba(150, 150, 150, 0.8);
+-webkit-box-shadow: 4px 1px 45px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 1px 45px 10px rgba(0,0,0,0.75);
+box-shadow: 4px 1px 45px 10px rgba(0,0,0,0.75);
+color:#474242;
+float: left;
+}
+#train_bil {
+width: 100%;
+height: 330px;
+padding: 82px 2px 0px 0px;
+background: url(../images/concrete_seamless.png);
+text-shadow: -1px -1px 13px rgba(150, 150, 150, 0.8);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: 4px 1px 45px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 1px 45px 10px rgba(0,0,0,0.75);
+box-shadow: 4px 1px 45px 10px rgba(0,0,0,0.75);
+color:#474242;
+float: left;
+}
+
+.hideme{
+display:none;
+}
+
+
+

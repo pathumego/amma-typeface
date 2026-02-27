@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amma — අම්මා — அம்மா</title>
+    <meta name="description" content="A fusion of Sinhala and Tamil letters. Exploring the boundaries that divide us.">
+    <meta name="author" content="Pathum Egodawatta, mooniak">
+    <meta property="og:title" content="Amma — අම්මා — அம்மா">
+    <meta property="og:description" content="A fusion of Sinhala and Tamil letters.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts fallback -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================================
+           FONTS
+           ============================================================ */
+        @font-face {
+            font-family: 'Amma-Regular';
+            src: url('fonts/amma/Amma.woff2') format('woff2'),
+                 url('fonts/amma/Amma.woff') format('woff'),
+                 url('fonts/amma/Amma.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'NotoSansSinhala';
+            src: url('fonts/NotoSansSinhala-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'NotoSansTamil';
+            src: url('fonts/NotoSansTamil-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'NidahasFMAbhaya';
+            src: url('assets/fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.woff') format('woff'),
+                 url('assets/fonts/NidahasFMAbhaya/NidahasFMAbhaya-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SriTamil';
+            src: url('assets/fonts/sritamil/SriTamil-Bold_gdi.woff') format('woff'),
+                 url('assets/fonts/sritamil/SriTamil-Bold_gdi.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* ============================================================
+           RESET & BASE
+           ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'NotoSansSinhala', 'Noto Sans Sinhala', sans-serif;
+            color: #1a1a1a;
+            background: white;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        button { border: none; background: none; cursor: pointer; font-family: inherit; }
+        img { display: block; }
+
+        /* ============================================================
+           HERO / INTRO SECTION
+           ============================================================ */
+        .hero {
+            text-align: center;
+            padding: 64px 40px 52px;
+            background: #fff;
+        }
+        .hero-circle {
+            font-family: 'Amma-Regular', sans-serif;
+            font-size: 72px;
+            color: #fff;
+            background: red;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 40px;
+            line-height: 1;
+        }
+        .hero-titles { margin-bottom: 44px; line-height: 1.4; }
+        .hero-titles .t-en {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.85em;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .hero-titles .t-si {
+            font-family: 'NidahasFMAbhaya', serif;
+            font-size: 2em;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .hero-titles .t-ta {
+            font-family: 'NotoSansTamil', 'Noto Sans Tamil', sans-serif;
+            font-size: 1.7em;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        .hero-desc {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1040px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .hero-desc p {
+            font-size: 0.92em;
+            line-height: 1.75;
+            color: #444;
+        }
+        .hero-desc .d-si {
+            font-family: 'NidahasFMAbhaya', serif;
+            font-size: 1em;
+            line-height: 1.65;
+        }
+        .hero-desc .d-en {
+            font-family: 'Libre Baskerville', serif;
+        }
+        .hero-desc .d-ta {
+            font-family: 'NotoSansTamil', 'Noto Sans Tamil', sans-serif;
+            font-size: 0.92em;
+            line-height: 1.75;
+        }
+
+        /* ============================================================
+           FONT TESTER
+           ============================================================ */
+        #textarea-wrap {
+            width: 100%;
+            background: red;
+        }
+        #textbox {
+            font-family: 'Amma-Regular', sans-serif;
+            background: red;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            width: 100%;
+            min-height: 200px;
+            padding: 68px 40px;
+            border: none;
+            outline: none;
+            resize: none;
+            display: block;
+            overflow: auto;
+        }
+        #textbox::placeholder {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.6em;
+        }
+
+        /* ---- Keyboard action row ---- */
+        .kb-actions {
+            background: white;
+            border-top: 1px solid #eee;
+        }
+        table.tbl-kb-actions {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table.tbl-kb-actions td {
+            padding: 4px 2px;
+            vertical-align: middle;
+        }
+        table.tbl-kb-actions img {
+            width: 52px;
+            height: 52px;
+            cursor: pointer;
+            display: block;
+        }
+        .actionBtn {
+            background-color: #eee;
+            color: #333;
+            padding: 16px 60px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: 'NotoSansSinhala', sans-serif;
+        }
+        .actionBtn:hover { background: #ddd; }
+        .actionBtn.spc { padding: 16px 120px; }
+        .actionBtn.bkspc { padding: 16px 60px; }
+
+        /* ---- On-screen keyboard ---- */
+        #main-body {
+            background: white;
+            padding: 20px 0 10px;
+        }
+        #keyboard-si,
+        #keyboard-ta {
+            text-align: center;
+            padding: 16px 20px;
+        }
+        .keyboard {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 4px 8px;
+        }
+        table.keyBlock {
+            border-collapse: collapse;
+        }
+        table.keyBlock td {
+            padding: 3px;
+        }
+        #compoundchars {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .button {
+            font-family: 'NotoSansSinhala', 'NotoSansTamil', 'Noto Sans Sinhala', 'Noto Sans Tamil', sans-serif;
+            width: 72px;
+            height: 72px;
+            font-size: 22px;
+            background: #eee;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.08s;
+        }
+        .button:hover { background: #e0e0e0; }
+        .button:active { background: #d5d5d5; }
+        .buttonSpecial {
+            background: #e0e4f8;
+            border-color: #bcc3e8;
+            color: #2a3a8a;
+        }
+        .buttonSpecial:hover { background: #d0d6f0; }
+        .clear { clear: both; }
+
+        /* ---- Footer actions ---- */
+        div.footer {
+            text-align: center;
+            padding: 24px 0 32px;
+            background: white;
+        }
+        ul.action-btn {
+            list-style: none;
+            display: inline-flex;
+            gap: 16px;
+            padding: 0;
+            margin: 0 0 16px;
+            align-items: center;
+        }
+        ul.action-btn li img {
+            height: 52px;
+            cursor: pointer;
+            display: block;
+        }
+        p.copyright {
+            font-size: 12px;
+            color: #888;
+            font-family: sans-serif;
+        }
+
+        /* ============================================================
+           COMPARISON SECTION
+           ============================================================ */
+        .comparison {
+            padding: 60px 40px;
+            background: #f7f3ee;
+            border-top: 1px solid #e8e0d5;
+        }
+        .comparison-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .comparison-header h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 0.8em;
+            font-weight: 400;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: 10px;
+        }
+        .comparison-header p {
+            font-family: 'Amma-Regular', sans-serif;
+            font-size: 2.2em;
+            color: #1a1a1a;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+        .comp-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+        }
+        .comp-card h3 {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #ccc;
+            margin-bottom: 24px;
+            font-family: sans-serif;
+            font-weight: normal;
+        }
+        .comp-si {
+            font-family: 'NidahasFMAbhaya', serif;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 1.2;
+            color: #222;
+        }
+        .comp-ta {
+            font-family: 'NotoSansTamil', 'Noto Sans Tamil', sans-serif;
+            font-weight: 700;
+            font-size: 62px;
+            line-height: 1.0;
+            color: #222;
+        }
+        .comp-en {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 46px;
+            font-weight: 700;
+            color: #222;
+            line-height: 1.4;
+        }
+        .comp-amma {
+            font-family: 'Amma-Regular', sans-serif;
+            font-size: 72px;
+            line-height: 1.25;
+            color: #222;
+        }
+
+        /* ============================================================
+           HIDDEN CANVAS
+           ============================================================ */
+        #input_canvas {
+            visibility: hidden;
+            position: absolute;
+            left: -9999px;
+            top: 0;
+        }
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 800px) {
+            .hero { padding: 44px 20px 36px; }
+            .hero-circle { width: 160px; height: 160px; font-size: 56px; }
+            .hero-titles .t-en { font-size: 1.35em; }
+            .hero-titles .t-si { font-size: 1.55em; }
+            .hero-titles .t-ta { font-size: 1.3em; }
+            .hero-desc { grid-template-columns: 1fr; gap: 20px; }
+            .comparison { padding: 40px 20px; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            #onscreenkeyboard { padding: 0 12px; }
+            .button { width: 56px; height: 56px; font-size: 18px; }
+            .actionBtn { padding: 14px 40px; }
+            .actionBtn.spc { padding: 14px 70px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================================================================
+     HERO / INTRO
+     ================================================================ -->
+<section class="hero">
+    <div class="hero-circle">අම්මා</div>
+
+    <div class="hero-titles">
+        <h1 class="t-en">A Fusion of Sinhala and Tamil Letters</h1>
+        <h1 class="t-si">සිංහල හා දෙමල අක්ෂර දෙමුහුම</h1>
+        <h1 class="t-ta">சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள்</h1>
+    </div>
+
+    <div class="hero-desc">
+        <p class="d-si">
+            සහජීවනය අපහසු නැත. වෙනස්කම් වෙනුවට සමානකම් දකින්නට හැකිනම් එදිනට අප දෙදෙනාටම එකම ලෝකයක ජීවත් වන්නට හැකිවනු ඇත. මම ඔබේ ලොවේත් ඔබ මගේ ලොවෙත් අනෙකෙකු කලේ අප ගොඩනැගූ සංස්කෘතිය මිස ලේ, මස්, ඇට නහර නොවේ. අපහසු වන්නේ සහජීවනය නොව, ඒ බෙදා වෙන්කරන වෙනස්කම් වල සැබෑ ස්වරූපය හඳුනා ගැනීමයි.
+        </p>
+        <p class="d-en">
+            Harmony is not difficult. We will rejoice living in one world when we learn to see our similarities instead of differences. Our isolation in our own worlds is a construct of our cultures, not a part of who we are. It is not harmony that is difficult, but understanding the true nature of that which divides us.
+        </p>
+        <p class="d-ta">
+            சமாதானம் இயலாத ஒன்றல்ல. எம்மைச் சூழவுள்ள பொருட்களுக்கிடையே உள்ள வேறுபாடுகளை விடுத்து ஒற்றுமையினை அறிய முற்படுகையில் வாழ்க்கையில் மகிழ்ச்சி கிடைக்கின்றது. தனித்துவ குழுமங்கள் வெவ்வேறு கலாசார பாரம்பரியத்தினால் கட்டி எழுப்பப்பட்டவை. வேறுபடுவது கலாசாரமே அன்றி நாம் அல்ல. இந்த இயற்கை நியதியைப் புரிந்து கொள்கின்ற பொழுது சமாதானம் இயலாத ஒன்றல்ல.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================================================================
+     FONT TESTER
+     ================================================================ -->
+<div>
+    <form onreset="resetSession()" name="keyform">
+
+        <!-- Text input area -->
+        <div id="textarea-wrap" class="margin-center">
+            <textarea id="textbox" name="textbox" rows="4"
+                placeholder="Type here or use the keyboard  ·  ටයිප් කරන්න  ·  தட்டச்சு செய்யுங்கள்"
+                spellcheck="false"
+                aria-label="Type in Amma font"
+            ></textarea>
+        </div>
+
+        <!-- Hidden canvas for rendering -->
+        <canvas id="input_canvas" width="1200" height="300"></canvas>
+
+        <!-- Keyboard body -->
+        <div id="main-body">
+
+            <!-- Language switching + space/backspace row -->
+            <div class="kb-actions">
+                <div class="keyboard">
+                    <table class="tbl-kb-actions">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a id="lang-si-btn" href="javascript:switchLang('si')">
+                                        <img id="icon-si" src="images/icons/si-selected.png" alt="Sinhala">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a id="lang-ta-btn" href="javascript:switchLang('ta')">
+                                        <img id="icon-ta" src="images/icons/ta.png" alt="Tamil">
+                                    </a>
+                                </td>
+                                <td>
+                                    <input onclick="addthis(' ', 1)" class="actionBtn spc" type="button" value="space">
+                                </td>
+                                <td>
+                                    <input onclick="commandBackspace()" class="actionBtn bkspc" type="button" value="backspace">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ====================================================
+                 SINHALA KEYBOARD
+                 ==================================================== -->
+            <div id="keyboard-si">
+                <!-- Vowels -->
+                <div class="keyboard">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input onclick="addthis('අ',0)" class="button buttonNormal" type="button" value="අ"></td>
+                                <td><input onclick="addthis('ආ',0)" class="button buttonNormal" type="button" value="ආ"></td>
+                                <td><input onclick="addthis('ඇ',0)" class="button buttonNormal" type="button" value="ඇ"></td>
+                                <td><input onclick="addthis('ඈ',0)" class="button buttonNormal" type="button" value="ඈ"></td>
+                                <td><input onclick="addthis('ඉ',0)" class="button buttonNormal" type="button" value="ඉ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ඊ',0)" class="button buttonNormal" type="button" value="ඊ"></td>
+                                <td><input onclick="addthis('උ',0)" class="button buttonNormal" type="button" value="උ"></td>
+                                <td><input onclick="addthis('ඌ',0)" class="button buttonNormal" type="button" value="ඌ"></td>
+                                <td><input onclick="addthis('ඍ',0)" class="button buttonNormal" type="button" value="ඍ"></td>
+                                <td><input onclick="addthis('ඎ',0)" class="button buttonNormal" type="button" value="ඎ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('එ',0)" class="button buttonNormal" type="button" value="එ"></td>
+                                <td><input onclick="addthis('ඒ',0)" class="button buttonNormal" type="button" value="ඒ"></td>
+                                <td><input onclick="addthis('ඓ',0)" class="button buttonNormal" type="button" value="ඓ"></td>
+                                <td><input onclick="addthis('ඔ',0)" class="button buttonNormal" type="button" value="ඔ"></td>
+                                <td><input onclick="addthis('ඕ',0)" class="button buttonNormal" type="button" value="ඕ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ඖ',0)" class="button buttonNormal" type="button" value="ඖ"></td>
+                                <td><input onclick="addthis('අං',0)" class="button buttonNormal" type="button" value="අං"></td>
+                                <td><input onclick="addthis('අඃ',0)" class="button buttonNormal" type="button" value="අඃ"></td>
+                                <td><input onclick="addthis('ං',0)" class="button buttonNormal" type="button" value="ං"></td>
+                                <td><input onclick="addthis('ඃ',0)" class="button buttonNormal" type="button" value="ඃ"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Consonants block 1 -->
+                <div class="keyboard">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input onclick="addthis('ක',1)" class="button buttonNormal" type="button" value="ක"></td>
+                                <td><input onclick="addthis('ඛ',1)" class="button buttonNormal" type="button" value="ඛ"></td>
+                                <td><input onclick="addthis('ග',1)" class="button buttonNormal" type="button" value="ග"></td>
+                                <td><input onclick="addthis('ඝ',1)" class="button buttonNormal" type="button" value="ඝ"></td>
+                                <td><input onclick="addthis('ඞ',1)" class="button buttonNormal" type="button" value="ඞ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ඟ',1)" class="button buttonNormal" type="button" value="ඟ"></td>
+                                <td><input onclick="addthis('ච',1)" class="button buttonNormal" type="button" value="ච"></td>
+                                <td><input onclick="addthis('ඡ',1)" class="button buttonNormal" type="button" value="ඡ"></td>
+                                <td><input onclick="addthis('ජ',1)" class="button buttonNormal" type="button" value="ජ"></td>
+                                <td><input onclick="addthis('ඣ',1)" class="button buttonNormal" type="button" value="ඣ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ඤ',1)" class="button buttonNormal" type="button" value="ඤ"></td>
+                                <td><input onclick="addthis('ඥ',1)" class="button buttonNormal" type="button" value="ඥ"></td>
+                                <td><input onclick="addthis('ට',1)" class="button buttonNormal" type="button" value="ට"></td>
+                                <td><input onclick="addthis('ඨ',1)" class="button buttonNormal" type="button" value="ඨ"></td>
+                                <td><input onclick="addthis('ඩ',1)" class="button buttonNormal" type="button" value="ඩ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ඪ',1)" class="button buttonNormal" type="button" value="ඪ"></td>
+                                <td><input onclick="addthis('ණ',1)" class="button buttonNormal" type="button" value="ණ"></td>
+                                <td><input onclick="addthis('ඬ',1)" class="button buttonNormal" type="button" value="ඬ"></td>
+                                <td><input onclick="addthis('ත',1)" class="button buttonNormal" type="button" value="ත"></td>
+                                <td><input onclick="addthis('ථ',1)" class="button buttonNormal" type="button" value="ථ"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Consonants block 2 -->
+                <div class="keyboard">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input onclick="addthis('ද',1)" class="button buttonNormal" type="button" value="ද"></td>
+                                <td><input onclick="addthis('ධ',1)" class="button buttonNormal" type="button" value="ධ"></td>
+                                <td><input onclick="addthis('න',1)" class="button buttonNormal" type="button" value="න"></td>
+                                <td><input onclick="addthis('ඳ',1)" class="button buttonNormal" type="button" value="ඳ"></td>
+                                <td><input onclick="addthis('ප',1)" class="button buttonNormal" type="button" value="ප"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ඵ',1)" class="button buttonNormal" type="button" value="ඵ"></td>
+                                <td><input onclick="addthis('බ',1)" class="button buttonNormal" type="button" value="බ"></td>
+                                <td><input onclick="addthis('භ',1)" class="button buttonNormal" type="button" value="භ"></td>
+                                <td><input onclick="addthis('ම',1)" class="button buttonNormal" type="button" value="ම"></td>
+                                <td><input onclick="addthis('ඹ',1)" class="button buttonNormal" type="button" value="ඹ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ය',1)" class="button buttonNormal" type="button" value="ය"></td>
+                                <td><input onclick="addthis('ර',1)" class="button buttonNormal" type="button" value="ර"></td>
+                                <td><input onclick="addthis('ල',1)" class="button buttonNormal" type="button" value="ල"></td>
+                                <td><input onclick="addthis('ව',1)" class="button buttonNormal" type="button" value="ව"></td>
+                                <td><input onclick="addthis('ශ',1)" class="button buttonNormal" type="button" value="ශ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ෂ',1)" class="button buttonNormal" type="button" value="ෂ"></td>
+                                <td><input onclick="addthis('ස',1)" class="button buttonNormal" type="button" value="ස"></td>
+                                <td><input onclick="addthis('හ',1)" class="button buttonNormal" type="button" value="හ"></td>
+                                <td><input onclick="addthis('ළ',1)" class="button buttonNormal" type="button" value="ළ"></td>
+                                <td><input onclick="addthis('ෆ',1)" class="button buttonNormal" type="button" value="ෆ"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Vowel modifiers -->
+                <div class="keyboard" id="vowelmodifiers" style="display: none;">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input id="1"  class="button buttonSpecial" onclick="addthis('්', 0)"  type="button" value="ඟ්"></td>
+                                <td><input id="2"  class="button buttonSpecial" onclick="addthis('ා', 0)"  type="button" value="ඟා"></td>
+                                <td><input id="3"  class="button buttonSpecial" onclick="addthis('ැ', 0)"  type="button" value="ඟැ"></td>
+                                <td><input id="4"  class="button buttonSpecial" onclick="addthis('ෑ', 0)"  type="button" value="ඟෑ"></td>
+                                <td><input id="5"  class="button buttonSpecial" onclick="addthis('ි', 0)"  type="button" value="ඟි"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="6"  class="button buttonSpecial" onclick="addthis('ී', 0)"  type="button" value="ඟී"></td>
+                                <td><input id="7"  class="button buttonSpecial" onclick="addthis('ු', 0)"  type="button" value="ඟු"></td>
+                                <td><input id="8"  class="button buttonSpecial" onclick="addthis('ූ', 0)"  type="button" value="ඟූ"></td>
+                                <td><input id="10" class="button buttonSpecial" onclick="addthis('ෙ', 0)"  type="button" value="ඟෙ"></td>
+                                <td><input id="11" class="button buttonSpecial" onclick="addthis('ේ', 0)"  type="button" value="ඟේ"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="14" class="button buttonSpecial" onclick="addthis('ො', 0)"  type="button" value="ඟො"></td>
+                                <td><input id="15" class="button buttonSpecial" onclick="addthis('ෝ', 0)"  type="button" value="ඟෝ"></td>
+                                <td><input id="16" class="button buttonSpecial" onclick="addthis('ෞ', 0)"  type="button" value="ඟෞ"></td>
+                                <td><input id="17" class="button buttonSpecial" onclick="addthis('ෟ', 0)"  type="button" value="ඟෟ"></td>
+                                <td><input id="9"  class="button buttonSpecial" onclick="addthis('ෘ', 0)"  type="button" value="ඟෘ"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="12" class="button buttonSpecial" onclick="addthis('&#xDF2;', 0)" type="button" value="ඟෲ"></td>
+                                <td><input id="13" class="button buttonSpecial" onclick="addthis('ෛ', 0)"  type="button" value="ඟෛ"></td>
+                                <div id="compoundchars" style="visibility: visible;">
+                                    <input id="c1" class="button buttonSpecial" onclick="addthis('්‍ර', 2)" type="button" value="ඟ්‍ර">
+                                    <input id="c2" class="button buttonSpecial" onclick="addthis('්‍ය', 2)" type="button" value="ඟ්‍ය">
+                                </div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+            <!-- ====================================================
+                 TAMIL KEYBOARD
+                 ==================================================== -->
+            <div id="keyboard-ta" style="display:none;">
+                <!-- Vowels + first consonants -->
+                <div class="keyboard">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input onclick="addthis('அ',0)" class="button buttonNormal" type="button" value="அ"></td>
+                                <td><input onclick="addthis('ஆ',0)" class="button buttonNormal" type="button" value="ஆ"></td>
+                                <td><input onclick="addthis('இ',0)" class="button buttonNormal" type="button" value="இ"></td>
+                                <td><input onclick="addthis('ஈ',0)" class="button buttonNormal" type="button" value="ஈ"></td>
+                                <td><input onclick="addthis('உ',0)" class="button buttonNormal" type="button" value="உ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ஊ',0)" class="button buttonNormal" type="button" value="ஊ"></td>
+                                <td><input onclick="addthis('எ',0)" class="button buttonNormal" type="button" value="எ"></td>
+                                <td><input onclick="addthis('ஏ',0)" class="button buttonNormal" type="button" value="ஏ"></td>
+                                <td><input onclick="addthis('ஐ',0)" class="button buttonNormal" type="button" value="ஐ"></td>
+                                <td><input onclick="addthis('ஒ',0)" class="button buttonNormal" type="button" value="ஒ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ஓ',0)" class="button buttonNormal" type="button" value="ஓ"></td>
+                                <td><input onclick="addthis('ஔ',0)" class="button buttonNormal" type="button" value="ஔ"></td>
+                                <td><input onclick="addthis('ஃ',0)" class="button buttonNormal" type="button" value="ஃ"></td>
+                                <td><input onclick="addthis('க',1)" class="button buttonNormal" type="button" value="க"></td>
+                                <td><input onclick="addthis('ங',1)" class="button buttonNormal" type="button" value="ங"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ச',1)" class="button buttonNormal" type="button" value="ச"></td>
+                                <td><input onclick="addthis('ஞ',1)" class="button buttonNormal" type="button" value="ஞ"></td>
+                                <td><input onclick="addthis('ட',1)" class="button buttonNormal" type="button" value="ட"></td>
+                                <td><input onclick="addthis('ண',1)" class="button buttonNormal" type="button" value="ண"></td>
+                                <td><input onclick="addthis('த',1)" class="button buttonNormal" type="button" value="த"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Consonants block 2 -->
+                <div class="keyboard">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input onclick="addthis('ந',1)" class="button buttonNormal" type="button" value="ந"></td>
+                                <td><input onclick="addthis('ப',1)" class="button buttonNormal" type="button" value="ப"></td>
+                                <td><input onclick="addthis('ம',1)" class="button buttonNormal" type="button" value="ம"></td>
+                                <td><input onclick="addthis('ய',1)" class="button buttonNormal" type="button" value="ய"></td>
+                                <td><input onclick="addthis('ர',1)" class="button buttonNormal" type="button" value="ர"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ல',1)" class="button buttonNormal" type="button" value="ல"></td>
+                                <td><input onclick="addthis('வ',1)" class="button buttonNormal" type="button" value="வ"></td>
+                                <td><input onclick="addthis('ழ',1)" class="button buttonNormal" type="button" value="ழ"></td>
+                                <td><input onclick="addthis('ள',1)" class="button buttonNormal" type="button" value="ள"></td>
+                                <td><input onclick="addthis('ற',1)" class="button buttonNormal" type="button" value="ற"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ன',1)" class="button buttonNormal" type="button" value="ன"></td>
+                                <td><input onclick="addthis('ஜ',1)" class="button buttonNormal" type="button" value="ஜ"></td>
+                                <td><input onclick="addthis('ஶ',1)" class="button buttonNormal" type="button" value="ஶ"></td>
+                                <td><input onclick="addthis('ஷ',1)" class="button buttonNormal" type="button" value="ஷ"></td>
+                                <td><input onclick="addthis('ஸ',1)" class="button buttonNormal" type="button" value="ஸ"></td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="addthis('ஹ',1)" class="button buttonNormal" type="button" value="ஹ"></td>
+                                <td><input onclick="addthis('க்ஷ',1)" class="button buttonNormal" type="button" value="க்ஷ"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tamil vowel modifiers -->
+                <div class="keyboard" id="ta-vowelmodifiers" style="display: none;">
+                    <table class="keyBlock">
+                        <tbody>
+                            <tr>
+                                <td><input id="ta-1"  class="button buttonSpecial" onclick="addthis('ா', 0)"  type="button" value="கா"></td>
+                                <td><input id="ta-2"  class="button buttonSpecial" onclick="addthis('ி', 0)"  type="button" value="கி"></td>
+                                <td><input id="ta-3"  class="button buttonSpecial" onclick="addthis('ீ', 0)"  type="button" value="கீ"></td>
+                                <td><input id="ta-4"  class="button buttonSpecial" onclick="addthis('ு', 0)"  type="button" value="கு"></td>
+                                <td><input id="ta-5"  class="button buttonSpecial" onclick="addthis('ூ', 0)"  type="button" value="கூ"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="ta-6"  class="button buttonSpecial" onclick="addthis('ெ', 0)"  type="button" value="கெ"></td>
+                                <td><input id="ta-7"  class="button buttonSpecial" onclick="addthis('ே', 0)"  type="button" value="கே"></td>
+                                <td><input id="ta-8"  class="button buttonSpecial" onclick="addthis('ை', 0)"  type="button" value="கை"></td>
+                                <td><input id="ta-9"  class="button buttonSpecial" onclick="addthis('ொ', 0)"  type="button" value="கொ"></td>
+                                <td><input id="ta-10" class="button buttonSpecial" onclick="addthis('ோ', 0)"  type="button" value="கோ"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="ta-11" class="button buttonSpecial" onclick="addthis('ௌ', 0)"  type="button" value="கௌ"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div><!-- /#main-body -->
+
+        <!-- Footer actions -->
+        <div class="footer">
+            <ul class="action-btn margin-center">
+                <li><img src="images/icons/reset.png" alt="Reset" onclick="document.getElementById('reset-btn-hidden').click()" style="height:52px;cursor:pointer;"></li>
+                <li><img src="images/icons/print.png" alt="Print" onclick="printAsPDF()" style="height:52px;cursor:pointer;"></li>
+            </ul>
+            <input type="reset" id="reset-btn-hidden" style="display:none;">
+            <p class="copyright">© 2013–2024 Pathum Egodawatta, mooniak</p>
+        </div>
+
+    </form>
+</div>
+
+
+<!-- ================================================================
+     COMPARISON SECTION
+     ================================================================ -->
+<section class="comparison">
+    <div class="comparison-header">
+        <h2>Traditional Scripts vs Amma</h2>
+        <p>යක්කල &nbsp;·&nbsp; யக்கல &nbsp;·&nbsp; Yakkala</p>
+    </div>
+    <div class="comparison-grid">
+        <div class="comp-card">
+            <h3>Traditional Fonts</h3>
+            <div class="comp-si">යක්කල</div>
+            <div class="comp-ta">யக்கல</div>
+            <div class="comp-en">Yakkala</div>
+        </div>
+        <div class="comp-card">
+            <h3>Amma Font</h3>
+            <div class="comp-amma">යක්කල</div>
+            <div class="comp-amma">Yakkala</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================================================
+     SCRIPTS
+     ================================================================ -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+<script>
+(function () {
+    'use strict';
+
+    var lsKey = 'amma-str';
+    var currentLang = 'si';
+    var prevchar = '';
+    var keyclass = 'normal';
+
+    /* ---- Language switch ---- */
+    window.switchLang = function (lang) {
+        currentLang = lang;
+
+        // Show/hide keyboard panels
+        document.getElementById('keyboard-si').style.display = lang === 'si' ? 'block' : 'none';
+        document.getElementById('keyboard-ta').style.display = lang === 'ta' ? 'block' : 'none';
+
+        // Update icon images
+        document.getElementById('icon-si').src = lang === 'si' ? 'images/icons/si-selected.png' : 'images/icons/si.png';
+        document.getElementById('icon-ta').src = lang === 'ta' ? 'images/icons/ta-selected.png' : 'images/icons/ta.png';
+
+        // Reset modifier state for both keyboards
+        prevchar = '';
+        keyclass = 'normal';
+        document.getElementById('vowelmodifiers').style.display = 'none';
+        document.getElementById('compoundchars').style.visibility = 'hidden';
+        document.getElementById('ta-vowelmodifiers').style.display = 'none';
+    };
+
+    /* ---- Add character ---- */
+    window.addthis = function (character, type) {
+        triggerTextAreaChange();
+        document.keyform.textbox.value += character;
+
+        if (currentLang === 'si') {
+            if (type >= 1) {
+                if (type === 2) {
+                    keyclass = 'compound';
+                    document.getElementById('compoundchars').style.visibility = 'hidden';
+                } else {
+                    keyclass = 'normal';
+                    prevchar = '';
+                    document.getElementById('compoundchars').style.visibility = 'visible';
+                }
+                updatekeyboard(prevchar + character, keyclass);
+                document.getElementById('vowelmodifiers').style.display = 'inline-block';
+                prevchar = character;
+            } else {
+                document.getElementById('vowelmodifiers').style.display = 'none';
+                document.getElementById('compoundchars').style.visibility = 'hidden';
+            }
+        } else {
+            // Tamil
+            if (type >= 1) {
+                updateTamilKeyboard(prevchar + character);
+                document.getElementById('ta-vowelmodifiers').style.display = 'inline-block';
+                prevchar = character;
+            } else {
+                document.getElementById('ta-vowelmodifiers').style.display = 'none';
+            }
+        }
+    };
+
+    /* ---- Update Sinhala modifier panel labels ---- */
+    function updatekeyboard(val, keyclass) {
+        document.getElementById('1').value  = val + '\u0DCA';
+        document.getElementById('2').value  = val + '\u0DCF';
+        document.getElementById('3').value  = val + '\u0DD0';
+        document.getElementById('4').value  = val + '\u0DD1';
+        document.getElementById('5').value  = val + '\u0DD2';
+        document.getElementById('6').value  = val + '\u0DD3';
+        document.getElementById('7').value  = val + '\u0DD4';
+        document.getElementById('8').value  = val + '\u0DD6';
+        document.getElementById('9').value  = val + '\u0DD8';
+        document.getElementById('10').value = val + '\u0DD9';
+        document.getElementById('11').value = val + '\u0DDA';
+        document.getElementById('12').value = val + '\u0DF2';
+        document.getElementById('13').value = val + '\u0DDB';
+        document.getElementById('14').value = val + '\u0DDC';
+        document.getElementById('15').value = val + '\u0DDD';
+        document.getElementById('16').value = val + '\u0DDE';
+        document.getElementById('17').value = val + '\u0DDF';
+        if (keyclass === 'normal') {
+            document.getElementById('c1').value = val + '\u0DCA\u200D\u0DBB';
+            document.getElementById('c2').value = val + '\u0DCA\u200D\u0DBA';
+        }
+    }
+
+    /* ---- Update Tamil modifier panel labels ---- */
+    function updateTamilKeyboard(val) {
+        document.getElementById('ta-1').value  = val + '\u0BBE';
+        document.getElementById('ta-2').value  = val + '\u0BBF';
+        document.getElementById('ta-3').value  = val + '\u0BC0';
+        document.getElementById('ta-4').value  = val + '\u0BC1';
+        document.getElementById('ta-5').value  = val + '\u0BC2';
+        document.getElementById('ta-6').value  = val + '\u0BC6';
+        document.getElementById('ta-7').value  = val + '\u0BC7';
+        document.getElementById('ta-8').value  = val + '\u0BC8';
+        document.getElementById('ta-9').value  = val + '\u0BCA';
+        document.getElementById('ta-10').value = val + '\u0BCB';
+        document.getElementById('ta-11').value = val + '\u0BCC';
+    }
+
+    /* ---- Trigger debounced update ---- */
+    function triggerTextAreaChange() {
+        setTimeout(function () {
+            var str = document.getElementById('textbox').value;
+            saveToStorage(str);
+            draw();
+        }, 0);
+    }
+
+    /* ---- Backspace ---- */
+    window.commandBackspace = function () {
+        var textbox = document.getElementById('textbox');
+        var chars = Array.from(textbox.value);
+        chars.pop();
+        textbox.value = chars.join('');
+        draw();
+        saveToStorage(textbox.value);
+    };
+
+    /* ---- Reset ---- */
+    window.resetSession = function () {
+        try { localStorage.removeItem(lsKey); } catch (e) {}
+        document.getElementById('textbox').value = 'අම්මා';
+        resetCanvas();
+        draw();
+        prevchar = '';
+        keyclass = 'normal';
+        document.getElementById('vowelmodifiers').style.display = 'none';
+        document.getElementById('compoundchars').style.visibility = 'hidden';
+        document.getElementById('ta-vowelmodifiers').style.display = 'none';
+    };
+
+    /* ---- Canvas ---- */
+    function draw() {
+        var text = document.getElementById('textbox').value;
+        var canvas = document.getElementById('input_canvas');
+        canvas.width = window.innerWidth || 1200;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'white';
+        ctx.font = '60px Amma-Regular, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+    }
+
+    function resetCanvas() {
+        var canvas = document.getElementById('input_canvas');
+        canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    /* ---- Print as PDF ---- */
+    window.printAsPDF = function () {
+        draw();
+        var canvas = document.getElementById('input_canvas');
+        var imgData = canvas.toDataURL('image/jpeg', 1.0);
+        try {
+            var pdf = new jsPDF('landscape');
+            pdf.addImage(imgData, 'JPEG', 0, 0, 297, 74);
+            pdf.save('amma.pdf');
+        } catch (e) {
+            // Fallback: open print dialog
+            var win = window.open('', '', 'width=900,height=300');
+            win.document.write(
+                '<!DOCTYPE html><html><head><title>Amma</title></head>' +
+                '<body style="margin:0;"><img src="' + imgData + '" style="width:100%;"></body></html>'
+            );
+            win.document.close();
+            win.focus();
+            win.print();
+            win.close();
+        }
+    };
+
+    /* ---- Storage ---- */
+    function saveToStorage(val) {
+        try { localStorage.setItem(lsKey, val); } catch (e) {}
+    }
+
+    /* ---- Keyboard typing → draw ---- */
+    document.getElementById('textbox').addEventListener('input', function () {
+        draw();
+        saveToStorage(this.value);
+    });
+
+    /* ---- Restore from localStorage on load ---- */
+    (function init() {
+        try {
+            var saved = localStorage.getItem(lsKey);
+            document.getElementById('textbox').value = saved || 'අම්මා';
+        } catch (e) {
+            document.getElementById('textbox').value = 'අම්මා';
+        }
+        draw();
+    }());
+
+}());
+</script>
+
+</body>
+</html>

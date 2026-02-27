@@ -1,0 +1,251 @@
+# Copyright (C) 2012 WP Survey And Quiz Tool
+# This file is distributed under the same license as the WP Survey And Quiz Tool package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Survey And Quiz Tool 2.11\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-survey-and-quiz-tool\n"
+"POT-Creation-Date: 2012-12-06 13:51:41+00:00\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Razvan-Teodor Coloja <cypresstwist@gmail.com>\n"
+"Language-Team: ROMANIAN <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:48
+#: lib/Wpsqt/Page/Main/Results/Poll.php:55
+msgid "Answer"
+msgstr "Raspuns"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:49
+#: lib/Wpsqt/Page/Main/Results/Poll.php:56
+msgid "Votes"
+msgstr "Voturi"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:50
+#: lib/Wpsqt/Page/Main/Results/Poll.php:57
+msgid "Percentage"
+msgstr "Procentaj"
+
+#: lib/Wpsqt/Shortcode.php:175
+msgid "PHP Sessions error. Check your sessions settings."
+msgstr "Eroare de sesiune PHP. Verificati setarile sesiunii."
+
+#: lib/Wpsqt/Shortcode.php:177
+msgid "No such quiz/survey/poll"
+msgstr "Niciun chestionar/sondaj/poll de genul acesta"
+
+#: lib/Wpsqt/Shortcode.php:179
+msgid "No quiz identifier/name was given"
+msgstr "Nu s-a oferit un identificator/nume pentru chestionar"
+
+#: lib/Wpsqt/Shortcode.php:181
+msgid "Invalid type given"
+msgstr "Tip non-valid oferit"
+
+#: lib/Wpsqt/Shortcode.php:191
+msgid "This %s is currently disabled."
+msgstr "Acest %s este momentan dezctivat"
+
+#: lib/Wpsqt/Shortcode.php:201 lib/Wpsqt/Shortcode.php:218
+#: lib/Wpsqt/Shortcode.php:236
+msgid "You appear to have already taken this %s."
+msgstr "Se pare ca ati completat deja acest %s"
+
+#. translators: %s is the question name
+#: lib/Wpsqt/Shortcode.php:273
+msgid "%s is required"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:315
+msgid "Time Left:"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:316
+msgid "minutes"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:317
+msgid "seconds"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:318
+msgid "Unfortunately you have run out of time for this quiz"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:401
+msgid "correct"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:407
+msgid "incorrect"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:434
+msgid "Not all the required questions were answered!"
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:487
+msgid "Saved the current state. You can resume by revisiting the quiz."
+msgstr ""
+
+#: lib/Wpsqt/Shortcode.php:605
+msgid "Quiz can't be auto marked"
+msgstr ""
+
+#: lib/Wpsqt/Tokens.php:157
+msgid "More"
+msgstr "Mai mult"
+
+#: lib/Wpsqt/Tokens.php:158
+msgid "Less"
+msgstr "Mai putin"
+
+#: pages/admin/quiz/index.php:13 pages/admin/quiz/index.php:78
+msgid "Add New Quiz"
+msgstr "Adauga chestionar nou"
+
+#: pages/admin/quiz/index.php:54
+msgid "No quizes or surveys yet!"
+msgstr "Nici un chestionar sau sondaj deocamdata!"
+
+#: pages/admin/surveys/result.total.script.site.php:186
+msgid "You didn't answer this question"
+msgstr ""
+
+#: pages/site/poll/finished.php:23
+msgid "Thank you for taking the poll."
+msgstr "Va multumim pentru completarea poll-ului"
+
+#: pages/site/poll/section.php:64 pages/site/quiz/section.php:85
+#: pages/site/survey/section.php:57
+msgid "Submit"
+msgstr "Trimitere"
+
+#: pages/site/poll/section.php:66 pages/site/quiz/contact.php:39
+#: pages/site/quiz/section.php:87 pages/site/survey/section.php:59
+msgid "Next"
+msgstr "Urmatorul"
+
+#: pages/site/questions/likert.php:9 pages/site/questions/likertmatrix.php:12
+msgid "Strongly Disagree"
+msgstr "Dezacord puternic"
+
+#: pages/site/questions/likert.php:10 pages/site/questions/likertmatrix.php:13
+msgid "Disagree"
+msgstr "Dezacord"
+
+#: pages/site/questions/likert.php:11 pages/site/questions/likertmatrix.php:14
+msgid "No Opinion"
+msgstr "Fara opinie"
+
+#: pages/site/questions/likert.php:12 pages/site/questions/likertmatrix.php:15
+msgid "Agree"
+msgstr "Acord"
+
+#: pages/site/questions/likert.php:13 pages/site/questions/likertmatrix.php:16
+msgid "Strongly Agree"
+msgstr "Acord puternic"
+
+#: pages/site/questions/likertmatrix.php:33
+#: pages/site/questions/multiple.php:26
+msgid "Other"
+msgstr "Altele"
+
+#: pages/site/questions/textarea.php:11 pages/site/quiz/review.php:58
+msgid "Show/Hide Hint"
+msgstr "Afiseaza/Ascunde sugestie"
+
+#: pages/site/questions/textarea.php:13 pages/site/quiz/review.php:60
+msgid "Hint"
+msgstr "Sugestie"
+
+#: pages/site/quiz/contact.php:15
+msgid "Name"
+msgstr "Nume"
+
+#: pages/site/quiz/contact.php:19
+msgid "Email"
+msgstr "Email"
+
+#: pages/site/quiz/contact.php:23
+msgid "Phone"
+msgstr "Telefon"
+
+#: pages/site/quiz/contact.php:27
+msgid "Heard of us from?"
+msgstr "Ati auzit de noi de la?"
+
+#: pages/site/quiz/contact.php:31
+msgid "Address"
+msgstr "Adresa"
+
+#: pages/site/quiz/contact.php:35
+msgid "Extra Notes"
+msgstr "Note aditionale"
+
+#: pages/site/quiz/finished.php:9
+msgid "Exam Finished"
+msgstr "Test incheiat"
+
+#: pages/site/quiz/finished.php:27 pages/site/survey/finished.php:18
+msgid "Thank you for your time."
+msgstr "Va multumim pentru timpul acordat"
+
+#: pages/site/quiz/finished.php:36
+msgid "Download certification"
+msgstr "Download certificare"
+
+#: pages/site/quiz/limit.php:1
+msgid "Already Completed"
+msgstr "Deja completat"
+
+#: pages/site/quiz/limit.php:3
+msgid "Thank you for your interest but you have already completed this quiz."
+msgstr "Va multumim pentru interes dar ati completat deja acest chestionar"
+
+#: pages/site/quiz/review.php:32
+msgid "Mark"
+msgstr "Marcare"
+
+#: pages/site/quiz/review.php:33
+msgid "Answers"
+msgstr "Raspunsuri"
+
+#: pages/site/quiz/review.php:50
+msgid "Answer Given"
+msgstr "Raspuns dat"
+
+#: pages/site/quiz/review.php:67
+msgid "Total Points"
+msgstr "Puncte totale"
+
+#: pages/site/quiz/section.php:76
+msgid "Show answer"
+msgstr "Afiseaza raspuns"
+
+#: pages/site/survey/finish.php:3 pages/site/survey/finished.php:26
+msgid "Thank you for completing our survey!"
+msgstr "Va multumim ca ati completat sondajul nostru"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Survey And Quiz Tool"
+msgstr "Utilitar Wordpress de chestionar si sondaj"
+
+#. Plugin URI of the plugin/theme
+msgid "http://catn.com/2010/10/04/wp-survey-and-quiz-tool/"
+msgstr "http://catn.com/2010/10/04/wp-survey-and-quiz-tool/"
+
+#. Description of the plugin/theme
+msgid "Allows wordpress owners to create their own web based quizes."
+msgstr ""
+"Permite utilizatorilor wordpress sa creeze propriile lor chestionare online"
+
+#. Author of the plugin/theme
+msgid "Fubra Limited"
+msgstr "Fubra Limited"
+
+#. Author URI of the plugin/theme
+msgid "http://www.catn.com"
+msgstr "http://www.catn.com"

@@ -1,0 +1,25 @@
+.disqus_rcw_author_name {
+	position: relative;
+	top: -15px;
+	display: inline-block;
+}
+
+.disqus_rcw_single_comment_wrapper {
+	margin-bottom: 15px;
+}
+
+.disqus_rcw_avatar {
+	width: 35px;
+}
+
+.disqus_rcw_thread_title {
+	font-weight: bold;
+}
+
+.disqus_rcw_comment_actual_wrapper {
+	font-style: italic;
+}
+
+.disqus_rcw_clear {
+	clear: both;
+}

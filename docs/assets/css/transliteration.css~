@@ -1,0 +1,405 @@
+/**
+ * Transliteration API CSS.
+ *
+ * Tips for overriding the css:
+ * 1. Suggestions Menu - To change the suggestion menu colors, override
+ * goog-transliterate-indic-suggestion-menu and
+ * goog-transliterate-indic-suggestion-menuitem-highlight css classes.
+ *
+ * 2. Language Menu - To change the language menu colors, override
+ * goog-transliterate-indic-language-menu and
+ * goog-transliterate-indic-language-menuitem-highlight css classes.
+ *
+ * 3. Language Button - To change the language button colors, override
+ * goog-transliterate-indic-button and
+ * goog-transliterate-indic-button-checked css classes.
+ * If you want a non-shaded background for the buttons, you could remove the
+ * button-bg.gif background url parameter.
+ *
+ * Please note that all images referenced here are served out of
+ * http://www.google.com/uds/modules/elements/transliteration/.
+ */
+
+/*
+ * The offset positions used for margin-top in the IE6 versions of both
+ * the language buttons and labels are given in the following CSS variables.
+ */
+.goog-transliterate-ie6-ar { margin-top: -20px; }
+.goog-transliterate-ie6-bn { margin-top: -40px; }
+.goog-transliterate-ie6-gu { margin-top: -60px; }
+.goog-transliterate-ie6-hi { margin-top: -80px; }
+.goog-transliterate-ie6-kn { margin-top: -100px; }
+.goog-transliterate-ie6-ml { margin-top: -120px; }
+.goog-transliterate-ie6-mr { margin-top: -140px; }
+.goog-transliterate-ie6-ne { margin-top: -160px; }
+.goog-transliterate-ie6-pa { margin-top: -180px; }
+.goog-transliterate-ie6-ta { margin-top: -200px; }
+.goog-transliterate-ie6-te { margin-top: -220px; }
+.goog-transliterate-ie6-ur { margin-top: -240px; }
+.goog-transliterate-ie6-fa { margin-top: -260px; }
+
+/*
+ * The offset positions used for background-position in the non-IE6 versions
+ * of the language labels are given in the following CSS variables.
+ */
+.goog-transliterate-img-langmenu-ar { background-position: -62px -20px; }
+.goog-transliterate-img-langmenu-bn { background-position: -62px -40px; }
+.goog-transliterate-img-langmenu-gu { background-position: -62px -60px; }
+.goog-transliterate-img-langmenu-hi { background-position: -62px -80px; }
+.goog-transliterate-img-langmenu-kn { background-position: -62px -100px; }
+.goog-transliterate-img-langmenu-ml { background-position: -62px -120px; }
+.goog-transliterate-img-langmenu-mr { background-position: -62px -140px; }
+.goog-transliterate-img-langmenu-ne { background-position: -62px -160px; }
+.goog-transliterate-img-langmenu-pa { background-position: -62px -180px; }
+.goog-transliterate-img-langmenu-ta { background-position: -62px -200px; }
+.goog-transliterate-img-langmenu-te { background-position: -62px -220px; }
+.goog-transliterate-img-langmenu-ur { background-position: -62px -240px; }
+.goog-transliterate-img-langmenu-fa { background-position: -62px -260px; }
+
+/*
+ * The offset positions used for background-position in the non-IE6 versions
+ * of the language buttons are given in the following CSS variables.
+ */
+.goog-transliterate-img-button-ar { background-position: 0px -20px }
+.goog-transliterate-img-button-bn { background-position: 0px -40px; }
+.goog-transliterate-img-button-gu { background-position: 0px -60px; }
+.goog-transliterate-img-button-hi { background-position: 0px -80px; }
+.goog-transliterate-img-button-kn { background-position: 0px -100px; }
+.goog-transliterate-img-button-ml { background-position: 0px -120px; }
+.goog-transliterate-img-button-mr { background-position: 0px -140px; }
+.goog-transliterate-img-button-ne { background-position: 0px -160px; }
+.goog-transliterate-img-button-pa { background-position: 0px -180px; }
+.goog-transliterate-img-button-ta { background-position: 0px -200px; }
+.goog-transliterate-img-button-te { background-position: 0px -220px; }
+.goog-transliterate-img-button-ur { background-position: 0px -240px; }
+.goog-transliterate-img-button-fa { background-position: 0px -260px; }
+
+/**
+ * Style used by language dropdown menu.  The value set in the background-color
+ * is the background color of the menu.
+ */
+.goog-transliterate-indic-language-menu {
+  position: absolute;
+  border: 1px solid #B5B6B5;
+  background-color: #F3F3F7;
+  cursor: default;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+/**
+ * Style used by language dropdown menuitems.  The value set in the
+ * background-color is the color of the menuitem when it is hovered.
+ */
+.goog-transliterate-indic-language-menuitem-highlight {
+  background-color: #8CA6CD;
+  border-color: #70a0b0;
+}
+
+.goog-transliterate-indic-language-menuitem {
+  position: relative;
+  padding: 2px 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+/**
+ * Style used by suggestion menu.  The value set in the background-color
+ * is the background color of the menu.
+ */
+.goog-transliterate-indic-suggestion-menu {
+  position: absolute;
+  border: 1px solid #B5B6B5;
+  background-color: #F3F3F7;
+  cursor: default;
+  font: normal small arial, helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+/**
+ * Style used by suggestion menuitems.  The value set in the
+ * background-color is the color of the menuitem when it is hovered.
+ */
+.goog-transliterate-indic-suggestion-menuitem-highlight {
+  background-color: #8CA6CD;
+  border-color: #70a0b0;
+}
+
+.goog-transliterate-indic-suggestion-menuitem {
+  position: relative;
+  padding: 2px 1em;
+  margin: 0px;
+  list-style: none;
+}
+
+
+.goog-option {
+  padding-left: 15px !important;
+}
+
+.goog-option-selected {
+  background-image: url('/uds/modules/elements/transliteration/check.gif');
+  background-position: 4px 50%;
+  background-repeat: no-repeat;
+}
+
+html>body .goog-inline-block {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+.goog-inline-block {
+  position: relative;
+  display: inline-block;
+}
+
+* html .goog-inline-block {
+  display: inline;
+}
+
+*:first-child+html .goog-inline-block {
+  display: inline;
+}
+
+
+/**
+ * Style used by the transliterate language button.  The value set in the
+ * background is used when the button is not pressed.
+ */
+.goog-transliterate-indic-button {
+  border: 0;
+  padding: 0;
+  font: normal Tahoma, Arial, sans-serif;
+  color: #000;
+  background: #ddd url('/uds/modules/elements/transliteration/button-bg.gif' repeat-x top left;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
+  outline: none;
+}
+
+/**
+ * Style used by the transliterate language button.  The value set in the
+ * background is used when the button is pressed.
+ */
+.goog-transliterate-indic-button-active,
+.goog-transliterate-indic-button-checked {
+  background-color: #bbb;
+  background-position: bottom left;
+}
+
+
+.goog-transliterate-indic-button-outer-box,
+.goog-transliterate-indic-button-inner-box {
+  border-style: solid;
+  border-color: #aaa;
+  vertical-align: top;
+}
+
+.goog-transliterate-indic-button-outer-box {
+  margin: 0;
+  border-width: 1px 0;
+  padding: 0;
+}
+
+.goog-transliterate-indic-button-inner-box {
+  margin: 0 -1px;
+  border-width: 0 1px;
+  padding: 3px 4px;
+  height: 18px;
+}
+
+* html .goog-transliterate-indic-button-inner-box {
+  left: -1px;
+}
+* html .goog-transliterate-indic-button-rtl .goog-transliterate-indic-button-outer-box {
+  left: -1px;
+}
+* html .goog-transliterate-indic-button-rtl .goog-transliterate-indic-button-inner-box {
+  left: 0;
+}
+
+*:first-child+html .goog-transliterate-indic-button-inner-box {
+  left: -1px;
+}
+*:first-child+html .goog-transliterate-indic-button-rtl .goog-transliterate-indic-button-inner-box {
+  left: 1px;
+}
+
+::root .goog-transliterate-indic-button,
+::root .goog-transliterate-indic-button-outer-box {
+  line-height: 0;
+}
+
+::root .goog-transliterate-indic-button-inner-box {
+  line-height: normal;
+}
+
+.goog-transliterate-indic-button-disabled {
+  background-image: none !important;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.goog-transliterate-indic-button-disabled .goog-transliterate-indic-button-outer-box,
+.goog-transliterate-indic-button-disabled .goog-transliterate-indic-button-inner-box {
+  color: #333 !important;
+  border-color: #999 !important;
+}
+
+* html .goog-transliterate-indic-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+
+*:first-child+html .goog-transliterate-indic-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+
+.goog-transliterate-indic-button-hover .goog-transliterate-indic-button-outer-box,
+.goog-transliterate-indic-button-hover .goog-transliterate-indic-button-inner-box {
+  border-color: #9cf #69e #69e #7af !important;
+}
+
+.goog-transliterate-indic-button-focused .goog-transliterate-indic-button-outer-box,
+.goog-transliterate-indic-button-focused .goog-transliterate-indic-button-inner-box {
+  border-color: orange;
+}
+
+.goog-transliterate-indic-button-collapse-right,
+.goog-transliterate-indic-button-collapse-right .goog-transliterate-indic-button-outer-box,
+.goog-transliterate-indic-button-collapse-right .goog-transliterate-indic-button-inner-box {
+  margin-right: 0;
+}
+
+.goog-transliterate-indic-button-collapse-left,
+.goog-transliterate-indic-button-collapse-left .goog-transliterate-indic-button-outer-box,
+.goog-transliterate-indic-button-collapse-left .goog-transliterate-indic-button-inner-box {
+  margin-left: 0;
+}
+
+.goog-transliterate-indic-button-collapse-left .goog-transliterate-indic-button-inner-box  {
+  border-left: 1px solid #fff;
+}
+
+.goog-transliterate-indic-button-collapse-left.goog-transliterate-indic-button-checked
+.goog-transliterate-indic-button-inner-box {
+  border-left: 1px solid #ddd;
+}
+
+* html .goog-transliterate-indic-button-collapse-left .goog-transliterate-indic-button-inner-box {
+  left: 0px;
+}
+
+*:first-child+html .goog-transliterate-indic-button-collapse-left
+.goog-transliterate-indic-button-inner-box {
+  left: 0px;
+}
+
+.goog-transliterate-indic-button-caption {
+  vertical-align: top;
+}
+.goog-transliterate-indic-button-rtl .goog-transliterate-indic-button-caption {
+  padding: 0 0 0 4px;
+}
+
+.goog-transliterate-indic-overlay {
+  position : absolute;
+  z-index : -1000;
+  overflow : auto;
+  text-align : left;
+}
+
+/**
+ * Image CSS for IE6 rendering of the sprited png image that has both language
+ * buttons and language labels. An AlphaImageLoader filter is used in IE6, so
+ * that transparency of the specified image is preserved correctly.
+ */
+.goog-transliterate-img-ie6 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.google.com/uds/modules/elements/transliteration/translit_sprite.png');
+  width: '100%';
+  font-size: '0';
+}
+
+/**
+ * Button CSS for IE6.
+ */
+.goog-transliterate-img-ie6-button {
+  margin-left: -2px;
+}
+
+/**
+ * Language menu CSS for IE6.
+ */
+.goog-transliterate-img-ie6-langmenu {
+  margin-left: -62px;
+}
+
+/**
+ * Dropdown button CSS for IE6.
+ */
+.goog-transliterate-img-ie6-dropdown {
+  margin: -1px 0px 0px -8px;
+}
+
+/**
+ * CSS for the language button's parent div (to support IE6 rendering of the
+ * sprited png image).
+ */
+.goog-transliterate-img-ie6-button-parent {
+  width: 18px;
+  width: "26px";
+  height: 18px;
+  height: "24px";
+  overflow: hidden;
+}
+
+/**
+ * CSS for the language menu label's parent div (to support IE6 rendering of the
+ * sprited png image).
+ */
+.goog-transliterate-img-ie6-langmenu-parent {
+  width: 7ex;
+  width: "7ex";
+  height: 18px;
+  height: "20px";
+  overflow: hidden;
+}
+
+/**
+ * CSS for the dropdown button's parent div (to support IE6 rendering of the
+ * sprited png image).
+ */
+.goog-transliterate-img-ie6-dropdown-parent {
+  width: 6px;
+  width: "12px";
+  height: 18px;
+  height: "24px";
+  overflow: hidden;
+}
+
+/**
+ * Image CSS for non-IE6 rendering of the sprited png image that has both
+ * language buttons and language labels.
+ */
+.goog-transliterate-img {
+  background-image: url('/uds/modules/elements/transliteration/translit_sprite.png');
+  background-repeat: no-repeat;
+}
+
+/**
+ * Dropdown button CSS for non-IE6 rendering of the sprited png.
+ */
+.goog-transliterate-img-dropdown {
+  background-image: url('/uds/modules/elements/transliteration/translit_sprite.png');
+  background-position: -5px -1px;
+  background-repeat: no-repeat;
+  width: '7px';
+  height: '18px';
+}

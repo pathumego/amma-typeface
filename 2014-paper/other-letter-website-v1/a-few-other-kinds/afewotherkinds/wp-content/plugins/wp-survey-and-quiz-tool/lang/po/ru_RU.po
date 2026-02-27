@@ -1,0 +1,256 @@
+# Copyright (C) 2012 WP Survey And Quiz Tool
+# This file is distributed under the same license as the WP Survey And Quiz Tool package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Survey And Quiz Tool 2.11\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-survey-and-quiz-tool\n"
+"POT-Creation-Date: 2012-12-06 13:51:41+00:00\n"
+"PO-Revision-Date: 2012-12-08 18:04+0400\n"
+"Last-Translator: Alexander Khozya <alexander.khozya@gmail.com>\n"
+"Language-Team: Alexander Khozya <alexander.khozya@gmail.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: 3;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:48
+#: lib/Wpsqt/Page/Main/Results/Poll.php:55
+msgid "Answer"
+msgstr "Ответ"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:49
+#: lib/Wpsqt/Page/Main/Results/Poll.php:56
+#, fuzzy
+msgid "Votes"
+msgstr "Голоса"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:50
+#: lib/Wpsqt/Page/Main/Results/Poll.php:57
+msgid "Percentage"
+msgstr "Процент"
+
+#: lib/Wpsqt/Shortcode.php:175
+msgid "PHP Sessions error. Check your sessions settings."
+msgstr "Ошибка PHP-сессии. Проверьте настройки Ваших сессий."
+
+#: lib/Wpsqt/Shortcode.php:177
+msgid "No such quiz/survey/poll"
+msgstr "Такого теста/опроса/голосования не существует"
+
+#: lib/Wpsqt/Shortcode.php:179
+msgid "No quiz identifier/name was given"
+msgstr "Имя/идентификатор теста не был задан"
+
+#: lib/Wpsqt/Shortcode.php:181
+msgid "Invalid type given"
+msgstr "Предоставлен неправильный тип"
+
+#: lib/Wpsqt/Shortcode.php:191
+#, fuzzy
+msgid "This %s is currently disabled."
+msgstr "Этот %s в настоящий момент отключен."
+
+#: lib/Wpsqt/Shortcode.php:201 lib/Wpsqt/Shortcode.php:218
+#: lib/Wpsqt/Shortcode.php:236
+msgid "You appear to have already taken this %s."
+msgstr "Вы уже проходили этот %s."
+
+#. translators: %s is the question name
+#: lib/Wpsqt/Shortcode.php:273
+msgid "%s is required"
+msgstr "%s необходимо"
+
+#: lib/Wpsqt/Shortcode.php:315
+msgid "Time Left:"
+msgstr "Осталось времени:"
+
+#: lib/Wpsqt/Shortcode.php:316
+msgid "minutes"
+msgstr "минут"
+
+#: lib/Wpsqt/Shortcode.php:317
+msgid "seconds"
+msgstr "секунд"
+
+#: lib/Wpsqt/Shortcode.php:318
+msgid "Unfortunately you have run out of time for this quiz"
+msgstr "К сожалению, время прохождения теста истекло"
+
+#: lib/Wpsqt/Shortcode.php:401
+msgid "correct"
+msgstr "правильно"
+
+#: lib/Wpsqt/Shortcode.php:407
+msgid "incorrect"
+msgstr "неправильно"
+
+#: lib/Wpsqt/Shortcode.php:434
+msgid "Not all the required questions were answered!"
+msgstr "Не на все обязательные вопросы были даны ответы!"
+
+#: lib/Wpsqt/Shortcode.php:487
+msgid "Saved the current state. You can resume by revisiting the quiz."
+msgstr "Текущее состояние сохранено. Вы можете продолжить как вернетесь."
+
+#: lib/Wpsqt/Shortcode.php:605
+msgid "Quiz can't be auto marked"
+msgstr "Тест не может быть проверен автоматически"
+
+#: lib/Wpsqt/Tokens.php:157
+msgid "More"
+msgstr "Больше"
+
+#: lib/Wpsqt/Tokens.php:158
+msgid "Less"
+msgstr "Меньше"
+
+#: pages/admin/quiz/index.php:13 pages/admin/quiz/index.php:78
+msgid "Add New Quiz"
+msgstr "Добавить новый тест"
+
+#: pages/admin/quiz/index.php:54
+msgid "No quizes or surveys yet!"
+msgstr "Пока нет тестов или опросов!"
+
+#: pages/admin/surveys/result.total.script.site.php:186
+msgid "You didn't answer this question"
+msgstr "Вы не ответили на этот вопрос"
+
+#: pages/site/poll/finished.php:23
+msgid "Thank you for taking the poll."
+msgstr "Благодарим Вам за участие в голосовании."
+
+#: pages/site/poll/section.php:64 pages/site/quiz/section.php:85
+#: pages/site/survey/section.php:57
+msgid "Submit"
+msgstr "Отправить"
+
+#: pages/site/poll/section.php:66 pages/site/quiz/contact.php:39
+#: pages/site/quiz/section.php:87 pages/site/survey/section.php:59
+msgid "Next"
+msgstr "Далее"
+
+#: pages/site/questions/likert.php:9 pages/site/questions/likertmatrix.php:12
+msgid "Strongly Disagree"
+msgstr "Крайне несогласен"
+
+#: pages/site/questions/likert.php:10 pages/site/questions/likertmatrix.php:13
+msgid "Disagree"
+msgstr "Не согласен"
+
+#: pages/site/questions/likert.php:11 pages/site/questions/likertmatrix.php:14
+msgid "No Opinion"
+msgstr "Не знаю"
+
+#: pages/site/questions/likert.php:12 pages/site/questions/likertmatrix.php:15
+msgid "Agree"
+msgstr "Согласен"
+
+#: pages/site/questions/likert.php:13 pages/site/questions/likertmatrix.php:16
+msgid "Strongly Agree"
+msgstr "Крайне согласен"
+
+#: pages/site/questions/likertmatrix.php:33
+#: pages/site/questions/multiple.php:26
+#, fuzzy
+msgid "Other"
+msgstr "Другие"
+
+#: pages/site/questions/textarea.php:11 pages/site/quiz/review.php:58
+msgid "Show/Hide Hint"
+msgstr "Показать/скрыть подсказку"
+
+#: pages/site/questions/textarea.php:13 pages/site/quiz/review.php:60
+msgid "Hint"
+msgstr "Подсказка"
+
+#: pages/site/quiz/contact.php:15
+msgid "Name"
+msgstr "Имя"
+
+#: pages/site/quiz/contact.php:19
+msgid "Email"
+msgstr "Email"
+
+#: pages/site/quiz/contact.php:23
+msgid "Phone"
+msgstr "Телефон"
+
+#: pages/site/quiz/contact.php:27
+msgid "Heard of us from?"
+msgstr "Откуда о нас узнали?"
+
+#: pages/site/quiz/contact.php:31
+msgid "Address"
+msgstr "Адрес"
+
+#: pages/site/quiz/contact.php:35
+msgid "Extra Notes"
+msgstr "Дополнительные заметки"
+
+#: pages/site/quiz/finished.php:9
+msgid "Exam Finished"
+msgstr "Экзамен завершен"
+
+#: pages/site/quiz/finished.php:27 pages/site/survey/finished.php:18
+msgid "Thank you for your time."
+msgstr "Благодарим за уделенное время."
+
+#: pages/site/quiz/finished.php:36
+msgid "Download certification"
+msgstr "Скачать сертификат"
+
+#: pages/site/quiz/limit.php:1
+msgid "Already Completed"
+msgstr "Уже завершен"
+
+#: pages/site/quiz/limit.php:3
+msgid "Thank you for your interest but you have already completed this quiz."
+msgstr "Благодарим за проявленный интерес, но Вы уже проходили этот тест."
+
+#: pages/site/quiz/review.php:32
+msgid "Mark"
+msgstr "Оценка"
+
+#: pages/site/quiz/review.php:33
+msgid "Answers"
+msgstr "Ответы"
+
+#: pages/site/quiz/review.php:50
+msgid "Answer Given"
+msgstr "Ваш ответ"
+
+#: pages/site/quiz/review.php:67
+msgid "Total Points"
+msgstr "Общий балл"
+
+#: pages/site/quiz/section.php:76
+msgid "Show answer"
+msgstr "Показать ответ"
+
+#: pages/site/survey/finish.php:3 pages/site/survey/finished.php:26
+msgid "Thank you for completing our survey!"
+msgstr "Благодарим за прохождение опроса!"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Survey And Quiz Tool"
+msgstr "WP Survey And Quiz Tool"
+
+#. Plugin URI of the plugin/theme
+msgid "http://catn.com/2010/10/04/wp-survey-and-quiz-tool/"
+msgstr "http://catn.com/2010/10/04/wp-survey-and-quiz-tool/"
+
+#. Description of the plugin/theme
+msgid "Allows wordpress owners to create their own web based quizes."
+msgstr "Позволяет владельцам блогов на wordpress создавать тесты."
+
+#. Author of the plugin/theme
+msgid "Fubra Limited"
+msgstr "Fubra Limited"
+
+#. Author URI of the plugin/theme
+msgid "http://www.catn.com"
+msgstr "http://www.catn.com"

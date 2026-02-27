@@ -1,0 +1,24 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Inconsolata
+FamilyName:Inconsolata
+StyleName:Medium
+MenuName:Inconsolata
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Inconsolata
+WritingScript:Roman
+OutlineFileName:\Inconsolata.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:58464
+FileModTime:1391026388
+%EndFont
+

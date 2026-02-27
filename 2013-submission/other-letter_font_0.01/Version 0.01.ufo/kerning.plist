@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>uni0D85</key>
+	<dict>
+		<key>uni0D8C</key>
+		<integer>-114</integer>
+		<key>uni0D91</key>
+		<integer>-85</integer>
+		<key>uni0D92</key>
+		<integer>-85</integer>
+	</dict>
+	<key>uni0DAD</key>
+	<dict>
+		<key>uni0DCF</key>
+		<integer>-114</integer>
+	</dict>
+	<key>uni0DBA</key>
+	<dict>
+		<key>uni0D9A</key>
+		<integer>-86</integer>
+	</dict>
+	<key>uni0DBB</key>
+	<dict>
+		<key>uni0DBA</key>
+		<integer>-29</integer>
+	</dict>
+	<key>uni0DCF</key>
+	<dict>
+		<key>uni0DBB</key>
+		<integer>85</integer>
+	</dict>
+	<key>uni0DDD</key>
+	<dict>
+		<key>uni0DB4</key>
+		<integer>-29</integer>
+	</dict>
+</dict>
+</plist>

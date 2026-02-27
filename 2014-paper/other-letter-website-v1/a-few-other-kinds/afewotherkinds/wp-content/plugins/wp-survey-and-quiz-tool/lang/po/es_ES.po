@@ -1,0 +1,253 @@
+# Copyright (C) 2012 WP Survey And Quiz Tool
+# This file is distributed under the same license as the WP Survey And Quiz Tool package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Survey And Quiz Tool 2.11\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-survey-and-quiz-tool\n"
+"POT-Creation-Date: 2012-12-06 13:51:41+00:00\n"
+"PO-Revision-Date: 2012-12-06 11:49-0300\n"
+"Last-Translator: CONECT.AR <info@conect.ar.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:48
+#: lib/Wpsqt/Page/Main/Results/Poll.php:55
+msgid "Answer"
+msgstr "Respuesta"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:49
+#: lib/Wpsqt/Page/Main/Results/Poll.php:56
+msgid "Votes"
+msgstr "Votos"
+
+#: lib/Wpsqt/Page/Main/Results/Poll.php:50
+#: lib/Wpsqt/Page/Main/Results/Poll.php:57
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#: lib/Wpsqt/Shortcode.php:175
+msgid "PHP Sessions error. Check your sessions settings."
+msgstr "Error de sesiones de PHP. Verifique su configuración de sesiones."
+
+#: lib/Wpsqt/Shortcode.php:177
+msgid "No such quiz/survey/poll"
+msgstr "No existe tal examen/encuesta/votación"
+
+#: lib/Wpsqt/Shortcode.php:179
+msgid "No quiz identifier/name was given"
+msgstr "No se proveyó identificador/nombre del examen"
+
+#: lib/Wpsqt/Shortcode.php:181
+msgid "Invalid type given"
+msgstr "Se ha dado un tipo inválido"
+
+#: lib/Wpsqt/Shortcode.php:191
+msgid "This %s is currently disabled."
+msgstr "Este %s está actualmente deshabilitado."
+
+#: lib/Wpsqt/Shortcode.php:201 lib/Wpsqt/Shortcode.php:218
+#: lib/Wpsqt/Shortcode.php:236
+msgid "You appear to have already taken this %s."
+msgstr "Aparentemente usted ya ha tomado este %s."
+
+#. translators: %s is the question name
+#: lib/Wpsqt/Shortcode.php:273
+msgid "%s is required"
+msgstr "%s es obligatoria"
+
+#: lib/Wpsqt/Shortcode.php:315
+msgid "Time Left:"
+msgstr "Tiempo Restante:"
+
+#: lib/Wpsqt/Shortcode.php:316
+msgid "minutes"
+msgstr "minutos"
+
+#: lib/Wpsqt/Shortcode.php:317
+msgid "seconds"
+msgstr "segundos"
+
+#: lib/Wpsqt/Shortcode.php:318
+msgid "Unfortunately you have run out of time for this quiz"
+msgstr "Desafortunadamente se ha agotado el tiempo para este examen."
+
+#: lib/Wpsqt/Shortcode.php:401
+msgid "correct"
+msgstr "correcta"
+
+#: lib/Wpsqt/Shortcode.php:407
+msgid "incorrect"
+msgstr "incorrecta"
+
+#: lib/Wpsqt/Shortcode.php:434
+msgid "Not all the required questions were answered!"
+msgstr "No se respondieron todas las preguntas obligatorias!"
+
+#: lib/Wpsqt/Shortcode.php:487
+msgid "Saved the current state. You can resume by revisiting the quiz."
+msgstr "Se ha guardado el estado actual. Puede reanudar retomando el examen."
+
+#: lib/Wpsqt/Shortcode.php:605
+msgid "Quiz can't be auto marked"
+msgstr "El examen no puede auto calificarse."
+
+#: lib/Wpsqt/Tokens.php:157
+msgid "More"
+msgstr "Más"
+
+#: lib/Wpsqt/Tokens.php:158
+msgid "Less"
+msgstr "Menos"
+
+#: pages/admin/quiz/index.php:13 pages/admin/quiz/index.php:78
+msgid "Add New Quiz"
+msgstr "Agregar Nuevo Examen"
+
+#: pages/admin/quiz/index.php:54
+msgid "No quizes or surveys yet!"
+msgstr "¡Todavía no hay examenes o encuestas!"
+
+#: pages/admin/surveys/result.total.script.site.php:186
+msgid "You didn't answer this question"
+msgstr "No respondió esta pregunta"
+
+#: pages/site/poll/finished.php:23
+msgid "Thank you for taking the poll."
+msgstr "Gracias por haber participado de la encuesta."
+
+#: pages/site/poll/section.php:64 pages/site/quiz/section.php:85
+#: pages/site/survey/section.php:57
+msgid "Submit"
+msgstr "Enviar"
+
+#: pages/site/poll/section.php:66 pages/site/quiz/contact.php:39
+#: pages/site/quiz/section.php:87 pages/site/survey/section.php:59
+msgid "Next"
+msgstr "Siguiente"
+
+#: pages/site/questions/likert.php:9 pages/site/questions/likertmatrix.php:12
+msgid "Strongly Disagree"
+msgstr "Fuertemente en Desacuerdo"
+
+#: pages/site/questions/likert.php:10 pages/site/questions/likertmatrix.php:13
+msgid "Disagree"
+msgstr "Desacuerdo"
+
+#: pages/site/questions/likert.php:11 pages/site/questions/likertmatrix.php:14
+msgid "No Opinion"
+msgstr "No Opina"
+
+#: pages/site/questions/likert.php:12 pages/site/questions/likertmatrix.php:15
+msgid "Agree"
+msgstr "De Acuerdo"
+
+#: pages/site/questions/likert.php:13 pages/site/questions/likertmatrix.php:16
+msgid "Strongly Agree"
+msgstr "Fuertemente de Acuerdo"
+
+#: pages/site/questions/likertmatrix.php:33
+#: pages/site/questions/multiple.php:26
+msgid "Other"
+msgstr "Otro"
+
+#: pages/site/questions/textarea.php:11 pages/site/quiz/review.php:58
+msgid "Show/Hide Hint"
+msgstr "Mostrar/Ocultar Ayuda"
+
+#: pages/site/questions/textarea.php:13 pages/site/quiz/review.php:60
+msgid "Hint"
+msgstr "Ayuda"
+
+#: pages/site/quiz/contact.php:15
+msgid "Name"
+msgstr "Nombre"
+
+#: pages/site/quiz/contact.php:19
+msgid "Email"
+msgstr "Correo"
+
+#: pages/site/quiz/contact.php:23
+msgid "Phone"
+msgstr "Teléfono"
+
+#: pages/site/quiz/contact.php:27
+msgid "Heard of us from?"
+msgstr "¿Dónde escucho de nosotros?"
+
+#: pages/site/quiz/contact.php:31
+msgid "Address"
+msgstr "Dirección"
+
+#: pages/site/quiz/contact.php:35
+msgid "Extra Notes"
+msgstr "Notas Adicionales"
+
+#: pages/site/quiz/finished.php:9
+msgid "Exam Finished"
+msgstr "Examen Finalizado"
+
+#: pages/site/quiz/finished.php:27 pages/site/survey/finished.php:18
+msgid "Thank you for your time."
+msgstr "Gracias por su tiempo."
+
+#: pages/site/quiz/finished.php:36
+msgid "Download certification"
+msgstr "Descargar Certificado"
+
+#: pages/site/quiz/limit.php:1
+msgid "Already Completed"
+msgstr "Ya fue completado"
+
+#: pages/site/quiz/limit.php:3
+msgid "Thank you for your interest but you have already completed this quiz."
+msgstr "Gracias por su interés, pero usted ya ha completado este examen."
+
+#: pages/site/quiz/review.php:32
+msgid "Mark"
+msgstr "Puntaje"
+
+#: pages/site/quiz/review.php:33
+msgid "Answers"
+msgstr "Respuestas"
+
+#: pages/site/quiz/review.php:50
+msgid "Answer Given"
+msgstr "Respuesta Dada"
+
+#: pages/site/quiz/review.php:67
+msgid "Total Points"
+msgstr "Puntaje Total"
+
+#: pages/site/quiz/section.php:76
+msgid "Show answer"
+msgstr "Mostrar respuesta"
+
+#: pages/site/survey/finish.php:3 pages/site/survey/finished.php:26
+msgid "Thank you for completing our survey!"
+msgstr "¡Gracias por completar nuestra encuesta!"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Survey And Quiz Tool"
+msgstr "WP Survey And Quiz Tool"
+
+#. Plugin URI of the plugin/theme
+msgid "http://catn.com/2010/10/04/wp-survey-and-quiz-tool/"
+msgstr "http://catn.com/2010/10/04/wp-survey-and-quiz-tool/"
+
+#. Description of the plugin/theme
+msgid "Allows wordpress owners to create their own web based quizes."
+msgstr ""
+"Le permite a administradores de WordPress crear sus propios sondeos basados "
+"en la web."
+
+#. Author of the plugin/theme
+msgid "Fubra Limited"
+msgstr "Fubra Limited"
+
+#. Author URI of the plugin/theme
+msgid "http://www.catn.com"
+msgstr "http://www.catn.com"

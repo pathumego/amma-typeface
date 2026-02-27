@@ -1,0 +1,565 @@
+<?php
+/**
+ * Template Name: Home Page
+ */
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>A Few Other Kinds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="සිංහල හා දෙමල  අක්ෂර  දෙමුහුම - சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள் - A Fusion of Sinhala and Tamil Letters - Exploring the boundries that divde us. Living the fantasy of breaking them down. Doing what we can to realize that fantasy">
+<meta name="author" content="">
+<meta property="og:image" content="http://la-ulu.com/afewotherkinds/images/avatar.png"/>
+<meta property="og:title" content="A Few Other Kinds"/>
+<meta property="og:description" content="සිංහල හා දෙමල  අක්ෂර  දෙමුහුම - சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள் - A Fusion of Sinhala and Tamil Letters - சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள் - Exploring the boundries that divde us. Living the fantasy of breaking them down. Doing what we can to realize that fantasy /සහජීවනය අපහසු නැත. වෙනස්කම් වෙනුවට සමානකම්  දකින්නට හැකිනම් එදිනට අප දෙදෙනාටම  එකම ලෝකයක ජීවත් වන්නට හැකිවනු ඇත"/>
+<meta property="og:site_name" content="A Few Other Kinds"/>
+<meta property="og:type" content="website"/>
+<meta itemprop="name" content="A Few Other Kinds">
+<meta itemprop="description" content="සිංහල හා දෙමල  අක්ෂර  දෙමුහුම - சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள் - A Fusion of Sinhala and Tamil Letters - சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள் -  Exploring the boundries that divde us. Living the fantasy of breaking them down. Doing what we can to realize that fantasy /සහජීවනය අපහසු නැත. වෙනස්කම් වෙනුවට සමානකම්  දකින්නට හැකිනම් එදිනට අප දෙදෙනාටම  එකම ලෝකයක ජීවත් වන්නට හැකිවනු ඇත">
+<meta itemprop="image" content="http://la-ulu.com/afewotherkinds/images/avatar.png">
+
+<script src="http://la-ulu.com/afewotherkinds/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://la-ulu.com/afewotherkinds/scripts/client-side.js"></script>
+<script type="text/javascript" src="http://la-ulu.com/afewotherkinds/scripts/charCount.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  // <script type="text/javascript">
+
+  //     // Load the Google Transliterate API
+  //     google.load("elements", "1", {
+  //           packages: "transliteration"
+  //         });
+
+  //     function onLoad() {
+  //       var options = {
+  //         sourceLanguage: 'en',
+  //         destinationLanguage: ['ta','si'],
+  //         shortcutKey: 'ctrl+g',
+  //         transliterationEnabled: true
+  //       };
+
+  //       // Create an instance on TransliterationControl with the required
+  //       // options.
+  //       var control =
+  //           new google.elements.transliteration.TransliterationControl(options);
+
+  //       // Enable transliteration in the textfields with the given ids.
+  //       var ids = [ "phrase"];
+  //       control.makeTransliteratable(ids);
+
+  //       // Show the transliteration control which can be used to toggle between
+  //       // English and Hindi and also choose other destination language.
+  //       control.showControl('translControl');
+  //     }
+  //     google.setOnLoadCallback(onLoad);
+
+  //   </script>
+
+
+<script language="JavaScript">
+function showDiv() {
+   document.getElementById('message').style.display = "block";
+}
+
+</script>
+<SCRIPT TYPE="text/javascript">
+
+$(document).ready(
+    function(){
+        $("#phrase").focus(function () {
+            $(".hideme").slideDown("slow");;
+        });
+
+    });
+</SCRIPT>
+<script type="text/javascript">
+ $(function() {
+    $('a.slideto').bind('click',function(event){
+        var $anchor = $(this);
+ 
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000,'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        event.preventDefault();
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $('.example3').hide().before('<h5 class="textcenter"><a href="#" id="toggle-example3" class="button">keyboard support</a></h5');
+  $('a#toggle-example3').click(function() {
+    $('.example3').slideToggle(1000);
+    return false;
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $('.example').hide().before('<h4 class="textcenter">its free to share and&nbsp;<a href="#" id="toggle-example" class="button">re-produce!</a>&nbsp;</h4');
+  $('a#toggle-example').click(function() {
+    $('.example').slideToggle(1000);
+    return false;
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $('.example2').hide().before('<a href="#" id="toggle-example2" class="button">Read the full description</a>');
+  $('a#toggle-example2').click(function() {
+    $('.example2').slideToggle(1000);
+    return false;
+  });
+});
+</script>
+
+<!-- Hide share buttons when input empty -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    if($('#phrase').val() == '' ){$('.navbar').hide();}  
+
+    $('#phrase').on('change' , function() {
+
+         if( this.value != ''){
+
+               $('.hideme').show(); 
+          }
+          else{
+               $('.hideme').hide(); 
+         }
+    });
+  });
+    </script>
+
+<!-- Charactor counter -->
+
+<script type="text/javascript">
+  $(document).ready(function(){ 
+   
+    //custom usage
+    $(".3").charCount({
+      allowed: 30,    
+      warning: 5,
+      counterText: ' '  
+    });
+  });
+</script>
+
+
+<!-- download link creator -->
+<script type="text/javascript">
+
+function changeText2(){
+    var userInput = document.getElementById('phrase').value;
+    var lnk = document.getElementById('lnk');
+    lnk.href = "http://la-ulu.com/afewotherkinds/scripts/server-side.php?phrase=" + userInput;
+    lnk.innerHTML = lnk.href;
+
+
+//save output
+  ajax_output( userInput );
+}
+
+function ajax_output( parm )
+{
+  var ajax_data = {
+    user_input: parm,
+    ajax: '1'
+  };
+  
+  $.ajax({
+    url: "ajax.php",
+    type: 'POST',
+    data: ajax_data,
+    success: function(msg) {
+      //alert(msg);
+    }
+  });
+}
+</script>
+<!-- slider -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#process-slider').coinslider({ width: 900,height: 350, navigation: false, delay: 55, links : false, effect: 'fadein',hoverPause: false, });
+  });
+</script>
+
+<!-- slider -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#research-slider').coinslider({ width: 900,height: 350, navigation: false, delay: 46, links : false, effect: 'fadein',hoverPause: false, });
+  });
+</script>
+<!-- Loading Bootstrap -->
+<link href="http://la-ulu.com/afewotherkinds/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Loading Flat UI -->
+<link href="http://la-ulu.com/afewotherkinds/css/flat-ui.css" rel="stylesheet">
+<link rel="shortcut icon" href="http://la-ulu.com/afewotherkinds/images/favicon.ico">
+<link href="http://la-ulu.com/afewotherkinds/css/keyboard_style.css" rel="stylesheet">
+<link rel="stylesheet" href="http://la-ulu.com/afewotherkinds/css/coin-slider-styles.css" type="text/css" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+<style type="text/css">
+img {
+  border:none;
+}
+</style>
+</head>
+<body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=213549262128546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="sitename">
+  <h1>a<br/>few<br/>other<br/>kinds:</h1>
+
+  <h3>
+  
+  <h3>
+   <fb:like href="http://la-ulu.com/afewotherkinds/index.php" layout="button_count" show-faces="false" width="450" action="like" colorscheme="light" />
+</div>
+<div class="container">
+  <div class="demo-headline">
+    <h1 class="demo-logo">
+    <header>
+      <div class="preview hideme"> <img src="http://la-ulu.com/afewotherkinds/scripts/server-side.php" /> </div>
+    </header>
+    <div class="row demo-row share-row">
+      <div class="navbar navbar-inverse hideme">
+        <input type="button" class="toplinks sharelink" onclick='javascript:changeText2();showDiv();' value="share on FB" id="enter"/>
+        <input id="gal_link" class="toplinks addlink" type='button' onclick='javascript:changeText2();showDiv();' value='add to gallery'/>
+        <a href="http://la-ulu.com/afewotherkinds/scripts/server-side.php" class="toplinks show_hide sharelink" id=lnk download="Hybrid" title="Hybrid"></a> <a id="reflectedlink2" class="toplinks downlink"  href="http://la-ulu.com/afewotherkinds/scripts/server-side.php?" download="Hybrid" title="Hybrid">download</a> </div>
+      <div id="message">
+        <p>image added to <a href="#home_gallery">phrase gallery</a></p>
+      </div>
+      <script type="text/javascript">
+
+$(document).ready(function() {
+
+    $("#enter").click(function() {
+        window.open("http://www.facebook.com/share.php?u=http://la-ulu.com/afewotherkinds/scripts/server-side-large.php?phrase=" + $("#phrase").val());
+    });                          
+                  
+});
+
+
+</script>
+      <script type="text/javascript">
+
+ $(document).ready(function() {
+var link= document.getElementById('reflectedlink2');
+  
+    var input= document.getElementById('phrase');
+
+
+    input.onchange=input.onkeyup= function() {
+        link.search= '?phrase='+encodeURIComponent(input.value);
+        link.firstChild.data= link.href;
+    };
+    });
+</script> 
+ 
+    </div>
+    <!-- /row --> 
+    
+  </div>
+  <!-- /demo-headline -->
+  
+  <div class="row demo-row">
+    <div id='translControl'></div>
+    <fieldset>
+      <form id="realtime-form" action="#" method="post">
+        <label for="message"></label>
+
+        <input ass="span4" type="text" class="3" id="phrase" name="phrase" maxlength="30" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type something here / ටයිප් කරන්න / டிபே யுவர் உரை'"placeholder="Type something here / ටයිප් කරන්න / டிபே யுவர் உரை"   >
+        </input>
+        </input>
+      </form>
+    </fieldset>
+    <br/>
+    <!-- keyboard -->
+    <div class="example3">
+      <h4 class="textcenter red">Sorry your browser dose not support onscreen keyboard</h4>
+      <ul id="keyboard">
+        <li class="symbol hybrid"><span class="off">`</span><span class="on">~</span></li>
+        <li class="symbol hybrid"><span class="off">1</span><span class="on">!</span></li>
+        <li class="symbol hybrid"><span class="off">2</span><span class="on">@</span></li>
+        <li class="symbol hybrid"><span class="off">3</span><span class="on">#</span></li>
+        <li class="symbol hybrid"><span class="off">4</span><span class="on">$</span></li>
+        <li class="symbol hybrid"><span class="off">5</span><span class="on">%</span></li>
+        <li class="symbol hybrid"><span class="off">6</span><span class="on">^</span></li>
+        <li class="symbol hybrid"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li class="symbol hybrid"><span class="off">8</span><span class="on">*</span></li>
+        <li class="symbol hybrid"><span class="off">9</span><span class="on">(</span></li>
+        <li class="symbol hybrid"><span class="off">0</span><span class="on">)</span></li>
+        <li class="symbol hybrid"><span class="off">-</span><span class="on">_</span></li>
+        <li class="symbol hybrid"><span class="off">=</span><span class="on">+</span></li>
+        <li class="delete lastitem">delete</li>
+        <li class="tab">tab</li>
+        <li class="letter hybrid">q</li>
+        <li class="letter hybrid">w</li>
+        <li class="letter hybrid">e</li>
+        <li class="letter hybrid">r</li>
+        <li class="letter hybrid">t</li>
+        <li class="letter hybrid">y</li>
+        <li class="letter hybrid">u</li>
+        <li class="letter hybrid">i</li>
+        <li class="letter hybrid">o</li>
+        <li class="letter hybrid">p</li>
+        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+        <li class="capslock">caps lock</li>
+        <li class="letter hybrid">a</li>
+        <li class="letter hybrid">s</li>
+        <li class="letter hybrid">d</li>
+        <li class="letter hybrid">f</li>
+        <li class="letter hybrid">g</li>
+        <li class="letter hybrid">h</li>
+        <li class="letter hybrid">j</li>
+        <li class="letter hybrid">k</li>
+        <li class="letter hybrid">l</li>
+        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+        <li class="return lastitem">return</li>
+        <li class="left-shift">shift</li>
+        <li class="letter hybrid">z</li>
+        <li class="letter hybrid">x</li>
+        <li class="letter hybrid">c</li>
+        <li class="letter hybrid">v</li>
+        <li class="letter hybrid">b</li>
+        <li class="letter hybrid">n</li>
+        <li class="letter hybrid">m</li>
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        <li class="right-shift lastitem">shift</li>
+        <li class="space lastitem">&nbsp;</li>
+      </ul>
+    </div>
+    <!-- keyboard end -->
+    
+    <div class="row intro_row">
+      <div class="span4">
+        <div class="demo-text-box prl">
+          <p>A Fusion of Sinhala and Tamil Letters<br/><br/>
+
+Harmony is not difficult. We will rejoice living in one world when we learn to see our similarities instead of differences.
+
+Our isolation in our own worlds is a construct of our cultures, not a part of who we are. It is not harmony that is difficult, but understanding the true nature of that which divides us.
+
+<br/><br/>This is a recognition of a linguistic obstacle that separated us as Sinhala and Tamil.
+</p>
+          <a href="#about" class="slideto">Find out more</a> </div>
+      </div>
+      <!-- /text box -->
+      
+      <div class="span4 sinhala">
+        <div class="demo-text-box prl">
+          <p>සිංහල හා දෙමල  අක්ෂර  දෙමුහුම<br/><br/>
+
+සහජීවනය අපහසු නැත. වෙනස්කම් වෙනුවට සමානකම් දකින්නට හැකිනම් එදිනට අප දෙදෙනාටම එකම ලෝකයක ජීවත් වන්නට හැකිවනු ඇත. 
+
+මම ඔබේ ලොවේත් ඔබ මගේ ලොවෙත් අනෙකෙකු කලේ අප ගොඩනැගූ සංස්කෘතිය මිස ලේ, මස්, ඇට නහර නොවේ. අපහසු වන්නේ සහජීවනය නොව , ඒ බෙදා වෙන්කරන වෙනස්කම් වල සැබෑ ස්වරූපය හඳුනා ගැනීමයි. 
+
+ <br/><br/>මේ සිංහල දෙමල  අප බෙදා වෙන්කළ භාෂාවේ බාධකය හඳුනා ගැනීමක්.</p>
+        </div>
+      </div>
+      <!-- /text box -->
+      
+      <div class="span4">
+        <div class="demo-text-box prl">
+          <p>சிங்கள தமிழ் எழுத்துரு இடையேயான தொடர்புகள்<br/><br/>
+
+சமாதானம் இயலாத ஒன்றல்ல. எம்மைச் சூழவுள்ள பொருட்களுக்கிடையே உள்ள வேறுபாடுகளை விடுத்து ஒற்றுமையினை அறிய முற்படுகையில் வாழ்க்கையில்  மகிழ்ச்சி கிடைக்கின்றது. தனித்துவ குழுமங்கள் வெவ்வேறு கலாசார பாரம்பரியத்தினால் கட்டி எழுப்பப்பட்டவை. வேறுபடுவது கலாசாரமே அன்றி நாம் அல்ல. இந்த இயற்கை நியதியைப் புரிந்து கொள்கின்ற பொழுது சமாதானம் இயலாத ஒன்றல்ல.
+
+<br/><br/>இத்தளம் சிங்கள தமிழ் மொழிகளுக்கிடையேயான ஒன்றித்த அம்சங்களை இனங்காணுகின்ற ஒரு தேடல்.</p>
+        </div>
+      </div>
+      <!-- /text box --> 
+      
+    </div>
+    <!-- /row --> 
+
+
+
+ <!-- alpahbet -->
+    <div class="row intro_row">
+      <img src="images/alphabet.png">
+    <!-- /download font --> 
+    
+  </div>
+  <!-- /row --> 
+
+
+
+    <!-- download font -->
+    <div class="row intro_row">
+      <div class="span4"></div>
+      <div class="span4"> <a href="http://la-ulu.com/afewotherkinds/scripts/otherletter.ttf" download="otherletter" class="btn btn-block btn-warning"><i class="icon-file icon-white"></i> download font</a>
+        <div class="example"> <br/>
+          <i>You are free:</i> to Share — to copy, distribute and transmit the work or <br/>
+          to Remix — to adapt the work
+          to make commercial use of the work <i>Under the following conditions:</i> Attribution — You must attribute this work to this site (with link)
+          <p><br />
+            This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://la-ulu.com/" property="cc:attributionName" rel="cc:attributionURL">Pathum Egodawatta</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</p>
+        </div>
+        
+    </div>
+    <!-- /download font --> 
+    
+  </div>
+  <!-- /row --> 
+  
+
+  
+  <!-- about -->
+  <div id= "about" class="row">
+    <div class="span9">
+      <div class="demo-browser-action">
+        <H3>about</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue dui a nulla molestie ultrices. Aenean sed hendrerit ipsum. Integer lobortis in risus eget pharetra. Pellentesque nibh massa, aliquet eget tortor ac, tempus convallis velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc scelerisque fringilla ligula commodo tincidunt. Ut blandit cursus viverra. Duis luctus, enim sit amet auctor faucibus, nisi massa bibendum elit, id elementum libero ligula a erat. Vivamus dictum lectus sit amet libero sagittis aliquam. Quisque semper at diam et placerat. Duis laoreet, mauris vel mattis molestie, lectus risus malesuada ligula, id faucibus mi nisl eu velit. In a metus volutpat, dignissim ligula vitae, porttitor nunc. </p>
+        <p> Vestibulum gravida quis tortor vitae placerat. Nullam eget risus dolor. Duis ac urna velit. Nunc ultrices, enim sed mattis dignissim, metus sem tempor enim, eget tincidunt augue arcu rutrum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+      </div>
+      <div class="example2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis sagittis lectus. Curabitur quam arcu, adipiscing quis pretium in, pharetra eget dolor.</p>
+      </div>
+    </div>
+    <div class="span3">
+      
+        <?php get_sidebar();?>
+    </div>
+  </div>
+  <!-- /about --> 
+    <!-- NAV -->
+  
+  <div class="row demo-tiles">
+    <div class="span3">
+      <div class="tile"> <img src="images/icons/Chat@2x.png" alt="Chat@2x" class="tile-image">
+        <h3 class="tile-title"></h3>
+        <p></p>
+        <a href="#process" class="btn btn-block slideto"><b>PROCESS</b></a> </div>
+    </div>
+    <div class="span3">
+      <div class="tile"> <img src="images/icons/Compas@2x.png" alt="Compas@2x" class="tile-image ">
+        <h3 class="tile-title"></h3>
+        <p></p>
+        <a href="#research" class="btn btn-block slideto"><b>RESEARCH</b></a> </div>
+    </div>
+    <div class="span3">
+      <div class="tile"> <img src="images/icons/Pensils@2x.png" alt="Pensils@2x" class="tile-image">
+        <h3 class="tile-title"></h3>
+        <p></p>
+        <a href="#home_discussion" class="btn btn-block slideto"><b>DISCUSSION</b></a> </div>
+    </div>
+    <div class="span3">
+      <div class="tile tile"> <img src="images/icons/Infinity-Loop@2x.png" alt="Infinity-Loop@2x" class="tile-image">
+        <h3 class="tile-title"></h3>
+        <p></p>
+        <a href="#home_gallery" class="btn btn-block slideto"><b>PHRASE GALLERY</b></a> </div>
+    </div>
+  </div>
+  <!-- /Nav--> 
+  <!-- Process -->
+  
+  <div id= "process" class="row">
+    <div class="span9 homeslider">
+  <img src="images/street.png"> 
+</div>
+    <div class="span3">
+      <H3>street</h3>
+        <p>Explore how ethnic divde is created in a street with graphic elements, and try to blur them out. <br/><br/><a href="http://la-ulu.com/afewotherkinds/letters/">see the project&nbsp;&rarr;</a></p>
+    </div>
+  </div>
+  <!-- /Process --> 
+  <!-- Process -->
+  
+  <div id= "process" class="row">
+    <div class="span9 homeslider">
+      <div id='process-slider'> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/1.png' > </a> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/2.png' > </a> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/3.png' > </a> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/4.png' > </a> </div>
+    </div>
+    <div class="span3">
+      <H3>process</h3>
+        <p>scrappy draft notes, sketches, screenshots and user testing photographs<br/><br/><a href="http://la-ulu.com/afewotherkinds/process">see everything&nbsp;&rarr;</a></p>
+    </div>
+  </div>
+  <!-- /Process --> 
+  
+  <!-- research -->
+  
+  <div id= "research" class="row">
+    <div class="span9 homeslider">
+      <div id='research-slider'> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/1.png' > </a> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/2.png' > </a> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/3.png' > </a> <a href="img01_url" target="_blank"> <img src='http://la-ulu.com/afewotherkinds/images/proccess/4.png' > </a> </div>
+    </div>
+    <div class="span3">
+      <H3>research</h3>
+      <p>documents, links, references and user research material.<br/><br/><a href="http://la-ulu.com/afewotherkinds/research">see everything&nbsp;&rarr;</a></p>
+   
+    </div>
+  </div>
+  <!-- /research --> 
+ <!-- gallery -->
+  <div id="home_gallery" class="row">
+    <div class="span9 homeslider">
+       <div id="blog_sidebar">
+        
+      </div>
+  <?php
+    // Get all userinputs
+    $file_path = "userInput.data";
+    $fh = fopen($file_path, 'r') or die("can't open file");
+    $op = '';
+    
+    while(!feof($fh))
+      {
+        $op .= '<img src="scripts/server-side-large.php?phrase=' . fgets($fh) . '">';
+      }
+    
+    fclose($fh);
+    
+    echo $op;
+    ?>
+    </div>
+    <div class="span3">
+      <H3>gallery</h3>
+          <p>collection of messages by users typed using "otherletter" typeface.<br/><br/><a href="http://la-ulu.com/afewotherkinds/gallery.php">see everything&nbsp;&rarr;</a></p>
+   
+    </div>
+  </div>
+  <!-- /gallery --> 
+   <!-- discussion -->
+  <div id="home_discussion" class="row">
+    <div class="span9 homeslider">
+       <div id="blog_sidebar">
+        <?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('cart-sidebar') ) : ?> <?php endif; ?>
+      </div>
+ 
+    </div>
+    <div class="span3">
+      <H3>discussion</h3>
+<p>comments , feedback and discussion, add a comment or see what others think<br/><br/> <a href="http://la-ulu.com/afewotherkinds/discussion">see everything&nbsp;&rarr;</a></p>
+   
+    </div>
+  </div>
+  <!-- /discussion --> 
+</div>
+<!-- /container -->
+</div>
+
+<?php get_footer(); ?>

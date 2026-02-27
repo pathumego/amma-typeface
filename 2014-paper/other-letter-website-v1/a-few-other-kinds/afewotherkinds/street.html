@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Street - A Few Other Kinds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An exploration of ethnic divide in graphical elements of a street">
+<meta name="author" content="Pathum Egodawatta">
+<meta property="og:image" content="images/avatar.png"/>
+<meta property="og:title" content="A Few Other Kinds - The Street"/>
+<meta property="og:site_name" content="A Few Other Kinds"/>
+<meta property="og:type" content="website"/>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="scripts/client-side.js"></script>
+
+<script type="text/javascript">
+ $(function() {
+    $('a.slideto').bind('click',function(event){
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000,'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+</script>
+
+<!-- Loading Bootstrap -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Loading Flat UI -->
+<link href="css/flat-ui.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet">
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+<![endif]-->
+<style type="text/css">
+img { border:none; }
+</style>
+</head>
+<body>
+
+<div id="sitename">
+  <h1><a href="index.html">a<br/>few<br/>other<br/>kinds:</a></h1>
+</div>
+
+<div class="container">
+  <div id="about" class="row">
+    <div class="span3" style="position: fixed;">
+      <div id="page_sidebar">
+        <h4>the street</h4>
+        An exploration of ethnic divide in graphical elements of a street.
+      </div>
+    </div>
+    <div class="span3"></div>
+
+    <div class="span9">
+      <div class="demo-browser-action">
+        <h3>The Street</h3>
+        <p>Explore how ethnic divide is created in a street with graphic elements, and try to blur them out.</p>
+
+        <div class="content_slim">
+          <div class='story'>
+            <img src="images/street.png" style="max-width:100%;">
+            <p>The second phase of the project uses the developed hybrid writing system in an urban street which has a high Tamil population density and tries to make the street more familiar to a Sinhala audience. Street signage, shop names, and other typographic elements are reimagined using the hybrid letterforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /container -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <a href="mailto:pathumego@gmail.com?Subject=Few%20other%20Kinds" target="_blank">Drop a message</a>
+        <p>
+          <div id="share-buttons">
+            <a href="http://www.facebook.com/sharer.php?u=http://la-ulu.com/afewotherkinds" target="_blank"><img class="socialbtn" src="images/social/facebook.png" alt="Facebook" /></a>
+            <a href="http://twitter.com/share?url=http://la-ulu.com/afewotherkinds&text=Sinhala and Tamil Hybrid letters" target="_blank"><img class="socialbtn" src="images/social/twitter.png" alt="Twitter" /></a>
+            <a href="https://plus.google.com/share?url=http://la-ulu.com/afewotherkinds" target="_blank"><img class="socialbtn" src="images/social/google.png" alt="Google" /></a>
+          </div>
+        </p>
+        <p>This website was designed and developed by Pathum Egodawatta. All rights reserved. &copy; Pathum Egodawatta</p>
+      </div>
+      <div class="span5">
+        <p><a href="index.html">&larr; Back to home</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/application.js"></script>
+</body>
+</html>

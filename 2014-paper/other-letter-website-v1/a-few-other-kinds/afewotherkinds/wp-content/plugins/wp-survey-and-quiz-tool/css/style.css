@@ -1,0 +1,26 @@
+div.wpsqt-maintenance {
+	padding-top : 25px;
+}
+
+dl.wpsqt dt {
+	display: inline;
+	font-weight: bold;
+}
+dl.wpsqt dd {
+	display: inline;
+}
+
+dd:after
+{
+content: "\A";
+white-space: pre;
+}
+
+div.wpsqt_image img { 
+	max-width: 100%;
+	height: auto;
+}
+
+tr.wpsqt-odd {
+	background-color : #e0e0e0;
+}

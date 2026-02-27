@@ -1,0 +1,405 @@
+/**
+ * Transliteration API CSS.
+ *
+ * Tips for overriding the css:
+ * 1. Suggestions Menu - To change the suggestion menu colors, override
+ *  transliterate-indic-suggestion-menu and
+ *  transliterate-indic-suggestion-menuitem-highlight css classes.
+ *
+ * 2. Language Menu - To change the language menu colors, override
+ *  transliterate-indic-language-menu and
+ *  transliterate-indic-language-menuitem-highlight css classes.
+ *
+ * 3. Language Button - To change the language button colors, override
+ *  transliterate-indic-button and
+ *  transliterate-indic-button-checked css classes.
+ * If you want a non-shaded background for the buttons, you could remove the
+ * button-bg.gif background url parameter.
+ *
+ * Please note that all images referenced here are served out of
+ * http://www.google.com/uds/modules/elements/transliteration/.
+ */
+
+/*
+ * The offset positions used for margin-top in the IE6 versions of both
+ * the language buttons and labels are given in the following CSS variables.
+ */
+. transliterate-ie6-ar { margin-top: -20px; }
+. transliterate-ie6-bn { margin-top: -40px; }
+. transliterate-ie6-gu { margin-top: -60px; }
+. transliterate-ie6-hi { margin-top: -80px; }
+. transliterate-ie6-kn { margin-top: -100px; }
+. transliterate-ie6-ml { margin-top: -120px; }
+. transliterate-ie6-mr { margin-top: -140px; }
+. transliterate-ie6-ne { margin-top: -160px; }
+. transliterate-ie6-pa { margin-top: -180px; }
+. transliterate-ie6-ta { margin-top: -200px; }
+. transliterate-ie6-te { margin-top: -220px; }
+. transliterate-ie6-ur { margin-top: -240px; }
+. transliterate-ie6-fa { margin-top: -260px; }
+
+/*
+ * The offset positions used for background-position in the non-IE6 versions
+ * of the language labels are given in the following CSS variables.
+ */
+. transliterate-img-langmenu-ar { background-position: -62px -20px; }
+. transliterate-img-langmenu-bn { background-position: -62px -40px; }
+. transliterate-img-langmenu-gu { background-position: -62px -60px; }
+. transliterate-img-langmenu-hi { background-position: -62px -80px; }
+. transliterate-img-langmenu-kn { background-position: -62px -100px; }
+. transliterate-img-langmenu-ml { background-position: -62px -120px; }
+. transliterate-img-langmenu-mr { background-position: -62px -140px; }
+. transliterate-img-langmenu-ne { background-position: -62px -160px; }
+. transliterate-img-langmenu-pa { background-position: -62px -180px; }
+. transliterate-img-langmenu-ta { background-position: -62px -200px; }
+. transliterate-img-langmenu-te { background-position: -62px -220px; }
+. transliterate-img-langmenu-ur { background-position: -62px -240px; }
+. transliterate-img-langmenu-fa { background-position: -62px -260px; }
+
+/*
+ * The offset positions used for background-position in the non-IE6 versions
+ * of the language buttons are given in the following CSS variables.
+ */
+. transliterate-img-button-ar { background-position: 0px -20px }
+. transliterate-img-button-bn { background-position: 0px -40px; }
+. transliterate-img-button-gu { background-position: 0px -60px; }
+. transliterate-img-button-hi { background-position: 0px -80px; }
+. transliterate-img-button-kn { background-position: 0px -100px; }
+. transliterate-img-button-ml { background-position: 0px -120px; }
+. transliterate-img-button-mr { background-position: 0px -140px; }
+. transliterate-img-button-ne { background-position: 0px -160px; }
+. transliterate-img-button-pa { background-position: 0px -180px; }
+. transliterate-img-button-ta { background-position: 0px -200px; }
+. transliterate-img-button-te { background-position: 0px -220px; }
+. transliterate-img-button-ur { background-position: 0px -240px; }
+. transliterate-img-button-fa { background-position: 0px -260px; }
+
+/**
+ * Style used by language dropdown menu.  The value set in the background-color
+ * is the background color of the menu.
+ */
+. transliterate-indic-language-menu {
+  position: absolute;
+  border: 1px solid #B5B6B5;
+  background-color: #F3F3F7;
+  cursor: default;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+/**
+ * Style used by language dropdown menuitems.  The value set in the
+ * background-color is the color of the menuitem when it is hovered.
+ */
+. transliterate-indic-language-menuitem-highlight {
+  background-color: #8CA6CD;
+  border-color: #70a0b0;
+}
+
+. transliterate-indic-language-menuitem {
+  position: relative;
+  padding: 2px 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+/**
+ * Style used by suggestion menu.  The value set in the background-color
+ * is the background color of the menu.
+ */
+. transliterate-indic-suggestion-menu {
+  position: absolute;
+  border: 1px solid #B5B6B5;
+  background-color: #F3F3F7;
+  cursor: default;
+  font: normal small arial, helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+/**
+ * Style used by suggestion menuitems.  The value set in the
+ * background-color is the color of the menuitem when it is hovered.
+ */
+. transliterate-indic-suggestion-menuitem-highlight {
+  background-color: #8CA6CD;
+  border-color: #70a0b0;
+}
+
+. transliterate-indic-suggestion-menuitem {
+  position: relative;
+  padding: 2px 1em;
+  margin: 0px;
+  list-style: none;
+}
+
+
+. option {
+  padding-left: 15px !important;
+}
+
+. option-selected {
+  background-image: url('/uds/modules/elements/transliteration/check.gif');
+  background-position: 4px 50%;
+  background-repeat: no-repeat;
+}
+
+html>body . inline-block {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+. inline-block {
+  position: relative;
+  display: inline-block;
+}
+
+* html . inline-block {
+  display: inline;
+}
+
+*:first-child+html . inline-block {
+  display: inline;
+}
+
+
+/**
+ * Style used by the transliterate language button.  The value set in the
+ * background is used when the button is not pressed.
+ */
+. transliterate-indic-button {
+  border: 0;
+  padding: 0;
+  font: normal Tahoma, Arial, sans-serif;
+  color: #000;
+  background: #ddd url('/uds/modules/elements/transliteration/button-bg.gif' repeat-x top left;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
+  outline: none;
+}
+
+/**
+ * Style used by the transliterate language button.  The value set in the
+ * background is used when the button is pressed.
+ */
+. transliterate-indic-button-active,
+. transliterate-indic-button-checked {
+  background-color: #bbb;
+  background-position: bottom left;
+}
+
+
+. transliterate-indic-button-outer-box,
+. transliterate-indic-button-inner-box {
+  border-style: solid;
+  border-color: #aaa;
+  vertical-align: top;
+}
+
+. transliterate-indic-button-outer-box {
+  margin: 0;
+  border-width: 1px 0;
+  padding: 0;
+}
+
+. transliterate-indic-button-inner-box {
+  margin: 0 -1px;
+  border-width: 0 1px;
+  padding: 3px 4px;
+  height: 18px;
+}
+
+* html . transliterate-indic-button-inner-box {
+  left: -1px;
+}
+* html . transliterate-indic-button-rtl . transliterate-indic-button-outer-box {
+  left: -1px;
+}
+* html . transliterate-indic-button-rtl . transliterate-indic-button-inner-box {
+  left: 0;
+}
+
+*:first-child+html . transliterate-indic-button-inner-box {
+  left: -1px;
+}
+*:first-child+html . transliterate-indic-button-rtl . transliterate-indic-button-inner-box {
+  left: 1px;
+}
+
+::root . transliterate-indic-button,
+::root . transliterate-indic-button-outer-box {
+  line-height: 0;
+}
+
+::root . transliterate-indic-button-inner-box {
+  line-height: normal;
+}
+
+. transliterate-indic-button-disabled {
+  background-image: none !important;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+. transliterate-indic-button-disabled . transliterate-indic-button-outer-box,
+. transliterate-indic-button-disabled . transliterate-indic-button-inner-box {
+  color: #333 !important;
+  border-color: #999 !important;
+}
+
+* html . transliterate-indic-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+
+*:first-child+html . transliterate-indic-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+
+. transliterate-indic-button-hover . transliterate-indic-button-outer-box,
+. transliterate-indic-button-hover . transliterate-indic-button-inner-box {
+  border-color: #9cf #69e #69e #7af !important;
+}
+
+. transliterate-indic-button-focused . transliterate-indic-button-outer-box,
+. transliterate-indic-button-focused . transliterate-indic-button-inner-box {
+  border-color: orange;
+}
+
+. transliterate-indic-button-collapse-right,
+. transliterate-indic-button-collapse-right . transliterate-indic-button-outer-box,
+. transliterate-indic-button-collapse-right . transliterate-indic-button-inner-box {
+  margin-right: 0;
+}
+
+. transliterate-indic-button-collapse-left,
+. transliterate-indic-button-collapse-left . transliterate-indic-button-outer-box,
+. transliterate-indic-button-collapse-left . transliterate-indic-button-inner-box {
+  margin-left: 0;
+}
+
+. transliterate-indic-button-collapse-left . transliterate-indic-button-inner-box  {
+  border-left: 1px solid #fff;
+}
+
+. transliterate-indic-button-collapse-left. transliterate-indic-button-checked
+. transliterate-indic-button-inner-box {
+  border-left: 1px solid #ddd;
+}
+
+* html . transliterate-indic-button-collapse-left . transliterate-indic-button-inner-box {
+  left: 0px;
+}
+
+*:first-child+html . transliterate-indic-button-collapse-left
+. transliterate-indic-button-inner-box {
+  left: 0px;
+}
+
+. transliterate-indic-button-caption {
+  vertical-align: top;
+}
+. transliterate-indic-button-rtl . transliterate-indic-button-caption {
+  padding: 0 0 0 4px;
+}
+
+. transliterate-indic-overlay {
+  position : absolute;
+  z-index : -1000;
+  overflow : auto;
+  text-align : left;
+}
+
+/**
+ * Image CSS for IE6 rendering of the sprited png image that has both language
+ * buttons and language labels. An AlphaImageLoader filter is used in IE6, so
+ * that transparency of the specified image is preserved correctly.
+ */
+. transliterate-img-ie6 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.google.com/uds/modules/elements/transliteration/translit_sprite.png');
+  width: '100%';
+  font-size: '0';
+}
+
+/**
+ * Button CSS for IE6.
+ */
+. transliterate-img-ie6-button {
+  margin-left: -2px;
+}
+
+/**
+ * Language menu CSS for IE6.
+ */
+. transliterate-img-ie6-langmenu {
+  margin-left: -62px;
+}
+
+/**
+ * Dropdown button CSS for IE6.
+ */
+. transliterate-img-ie6-dropdown {
+  margin: -1px 0px 0px -8px;
+}
+
+/**
+ * CSS for the language button's parent div (to support IE6 rendering of the
+ * sprited png image).
+ */
+. transliterate-img-ie6-button-parent {
+  width: 18px;
+  width: "26px";
+  height: 18px;
+  height: "24px";
+  overflow: hidden;
+}
+
+/**
+ * CSS for the language menu label's parent div (to support IE6 rendering of the
+ * sprited png image).
+ */
+. transliterate-img-ie6-langmenu-parent {
+  width: 7ex;
+  width: "7ex";
+  height: 18px;
+  height: "20px";
+  overflow: hidden;
+}
+
+/**
+ * CSS for the dropdown button's parent div (to support IE6 rendering of the
+ * sprited png image).
+ */
+. transliterate-img-ie6-dropdown-parent {
+  width: 6px;
+  width: "12px";
+  height: 18px;
+  height: "24px";
+  overflow: hidden;
+}
+
+/**
+ * Image CSS for non-IE6 rendering of the sprited png image that has both
+ * language buttons and language labels.
+ */
+. transliterate-img {
+  background-image: url('/uds/modules/elements/transliteration/translit_sprite.png');
+  background-repeat: no-repeat;
+}
+
+/**
+ * Dropdown button CSS for non-IE6 rendering of the sprited png.
+ */
+. transliterate-img-dropdown {
+  background-image: url('/uds/modules/elements/transliteration/translit_sprite.png');
+  background-position: -5px -1px;
+  background-repeat: no-repeat;
+  width: '7px';
+  height: '18px';
+}

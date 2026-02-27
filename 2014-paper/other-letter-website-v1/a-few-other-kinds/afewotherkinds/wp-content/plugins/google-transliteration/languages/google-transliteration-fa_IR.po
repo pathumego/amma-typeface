@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Transliteration\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-14 22:26+0330\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reza Moallemi <reza.ce84@gmail.com>\n"
+"Language-Team: Reza Moallemi <reza.ce84@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: google_transliteration-bp.php:16
+#: google_transliteration-bp.php:26
+#: google_transliteration-bp.php:54
+#: google_transliteration.php:44
+#: google_transliteration.php:78
+msgid "Enable Google Transliteration.(To type in English, press Ctrl+g)"
+msgstr "به صورت خودکار کلمات فینگلیش را به فارسی تبدیل کن. در صورتی که می‌خواهید انگلیسی تایپ کنید Ctrl+g را فشار دهید."
+
+#: google_transliteration-bp.php:60
+msgid "(To type in English, press Ctrl+g)"
+msgstr "(برای تایپ انگلیسی Ctrl+g را فشار دهید.)"
+
+#: google_transliteration.php:18
+msgid "Google Transliteration Options"
+msgstr "تنظیمات نویسه‌گردان گوگل"
+
+#: google_transliteration.php:18
+msgid "Google Transliteration"
+msgstr "نویسه‌گردان گوگل"
+
+#: google_transliteration.php:129
+msgid "Settings Saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: google_transliteration.php:136
+msgid "Google Transliteration Settings"
+msgstr "تنظیمات نویسه‌گردان گوگل"
+
+#: google_transliteration.php:137
+msgid "General Settings:"
+msgstr "تنظیمات عمومی:"
+
+#: google_transliteration.php:141
+msgid "Show list of languages to user."
+msgstr "لیست همه‌ی زبان‌ها را به کاربران نشان بده تا خودشان انتخاب کنند."
+
+#: google_transliteration.php:145
+msgid "Default Language:"
+msgstr "زبان پیش فرض:"
+
+#: google_transliteration.php:175
+msgid "WordPress Settings:"
+msgstr "تنظیمات وردپرس:"
+
+#: google_transliteration.php:176
+msgid "Comment Settings:"
+msgstr "تنظیمات دیدگاه‌ها:"
+
+#: google_transliteration.php:178
+msgid "Enable for comment form."
+msgstr "فعال سازی برای فرم دیدگاه‌ها."
+
+#: google_transliteration.php:180
+msgid "Enable Google Transliteration by default."
+msgstr "به صورت پیش‌فرض برای نظرهندگان فعال باشد."
+
+#: google_transliteration.php:182
+msgid "Put the settings after comment textarea."
+msgstr "تنظیمات نویسه‌گردان را بعد از بخش نوشتن نظرات قرار بده."
+
+#: google_transliteration.php:183
+msgid "Comment text field id: "
+msgstr "شناسه‌ی فیلد متن دیدگاه:"
+
+#: google_transliteration.php:185
+msgid "Default for Wordpress Themes is <b>comment</b>"
+msgstr "شناسه‌ی پیش فرض در پوشته های وردپرس <b>comment</b> می باشد."
+
+#: google_transliteration.php:187
+msgid "Post Settings (Admin Area only):"
+msgstr "تنظیمات نوشته‌ها:"
+
+#: google_transliteration.php:189
+msgid "Enable for post form."
+msgstr "فعال‌سازی برای صفحه‌ نوشته جدید"
+
+#: google_transliteration.php:191
+msgid "Enable Google Transliteration by default for admin."
+msgstr "به صورت پیش‌فرض برای مدیر فعال باشد."
+
+#: google_transliteration.php:194
+msgid "BuddyPress Settings:"
+msgstr "تنظیمات بادی‌پرس:"
+
+#: google_transliteration.php:196
+msgid "Enable for BuddyPress post and comment forms."
+msgstr "فعال سازی برای فرم‌های دیدگاه‌ها، فعالیت و گروه‌ها"
+
+#: google_transliteration.php:198
+msgid "Enable Google Transliteration by default for BuddyPress forms."
+msgstr "به صورت پیش‌فرض برای کاربران فعال باشد."
+
+#: google_transliteration.php:202
+msgid "Save Changes"
+msgstr "ذخیره‌ی تغییرات"
+
+#: google_transliteration.php:206
+msgid "My other plugins for wordpress:"
+msgstr "دیگر افزونه‌های کاوشگر برای وردپرس:"
+
+#: google_transliteration.php:208
+msgid "Google Reader Stats "
+msgstr "آماره‌ی گوگل ریدر"
+
+#: google_transliteration.php:209
+#: google_transliteration.php:213
+#: google_transliteration.php:217
+#: google_transliteration.php:221
+#: google_transliteration.php:225
+#: google_transliteration.php:229
+msgid "Download"
+msgstr "دریافت"
+
+#: google_transliteration.php:210
+msgid "http://www.moallemi.ir/en/blog/2010/06/03/google-reader-stats-for-wordpress/"
+msgstr "http://www.moallemi.ir/blog/1389/03/14/%d8%a7%d9%81%d8%b2%d9%88%d9%86%d9%87-%d8%a2%d9%85%d8%a7%d8%b1%d9%87-%da%af%d9%88%da%af%d9%84-%d8%b1%db%8c%d8%af%d8%b1-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3-%d9%84%d8%a7%db%8c%da%a9/"
+
+#: google_transliteration.php:210
+#: google_transliteration.php:214
+#: google_transliteration.php:218
+#: google_transliteration.php:222
+#: google_transliteration.php:226
+#: google_transliteration.php:230
+msgid "More Information"
+msgstr "اطلاعات بیشتر"
+
+#: google_transliteration.php:212
+msgid "Advanced User Agent Displayer "
+msgstr "نمایش دهنده اطلاعات نظردهندگان"
+
+#: google_transliteration.php:214
+msgid "http://www.moallemi.ir/en/blog/2009/09/20/advanced-user-agent-displayer/"
+msgstr "http://www.moallemi.ir/blog/1388/07/24/%D8%A7%D9%81%D8%B2%D9%88%D9%86%D9%87-%DB%8C-%D9%86%D9%85%D8%A7%DB%8C%D8%B4-%D8%AF%D9%87%D9%86%D8%AF%D9%87-%DB%8C-%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA-%D9%86%D8%B8%D8%B1-%D8%AF%D9%87%D9%86%D8%AF/"
+
+#: google_transliteration.php:216
+msgid "Behnevis Transliteration "
+msgstr "نویسه‌گردان بهنویس"
+
+#: google_transliteration.php:220
+msgid "Comments On Feed "
+msgstr "نظرات در فید"
+
+#: google_transliteration.php:222
+msgid "http://www.moallemi.ir/en/blog/2009/12/18/comments-on-feed-for-wordpress/"
+msgstr "http://www.moallemi.ir/blog/1388/09/28/%d8%a7%d9%81%d8%b2%d9%88%d9%86%d9%87-%d9%86%d9%85%d8%a7%db%8c%d8%b4-%d9%86%d8%b8%d8%b1%d8%a7%d8%aa-%d8%af%d8%b1-%d9%81%db%8c%d8%af-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3/"
+
+#: google_transliteration.php:224
+msgid "Feed Delay "
+msgstr "تاخیر در فید"
+
+#: google_transliteration.php:226
+msgid "http://www.moallemi.ir/en/blog/2010/02/25/feed-delay-for-wordpress/"
+msgstr "http://www.moallemi.ir/blog/1388/12/07/%d8%a7%d9%81%d8%b2%d9%88%d9%86%d9%87-%d8%a7%d9%86%d8%aa%d8%b4%d8%a7%d8%b1-%d9%85%d8%b7%d8%a7%d9%84%d8%a8-%d9%81%db%8c%d8%af-%d8%aa%d8%a7%d8%ae%db%8c%d8%b1-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3/"
+
+#: google_transliteration.php:228
+msgid "Contact Commenter "
+msgstr "تماس با نظردهندگان"
+
+#: google_transliteration.php:230
+msgid "http://www.moallemi.ir/blog/1388/12/27/%d9%87%d8%af%db%8c%d9%87-%da%a9%d8%a7%d9%88%d8%b4%da%af%d8%b1-%d9%85%d9%86%d8%a7%d8%b3%d8%a8%d8%aa-%d8%b3%d8%a7%d9%84-%d9%86%d9%88-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3/"
+msgstr "http://www.moallemi.ir/blog/1388/12/27/%d9%87%d8%af%db%8c%d9%87-%da%a9%d8%a7%d9%88%d8%b4%da%af%d8%b1-%d9%85%d9%86%d8%a7%d8%b3%d8%a8%d8%aa-%d8%b3%d8%a7%d9%84-%d9%86%d9%88-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3/"
+
+#: google_transliteration.php:399
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: google_transliteration.php:417
+msgid "Google Transliteration support for WordPress and BuddyPress"
+msgstr "نویسه‌گردان گوگل برای وردپرس و بادی‌پرس. با استفاده از این افزونه می‌توانید کلماتی که در بخش دیدگاه‌ها و ویرایشگر نوشتاری بخش نوشته‌ی جدید وردپرس نوشته می‌شود را از فینگلیش به فارسی تبدیل کنید."
+
+#: google_transliteration.php:418
+msgid "Reza Moallemi"
+msgstr "رضا معلمی"
+

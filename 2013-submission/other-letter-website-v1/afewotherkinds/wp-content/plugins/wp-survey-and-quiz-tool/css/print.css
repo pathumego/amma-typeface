@@ -1,0 +1,29 @@
+@media print {
+	div#wphead {
+	 display:none;
+	}
+	
+	div#footer {
+	 display:none;
+	}
+	div#adminmenuwrap {
+	 display:none;
+	}
+	div#adminbar {
+	 display:none;
+	}	
+	div#screen-meta {
+	 display:none;
+	}
+	
+	div#wpbody {
+	 display:block;
+	}
+	
+	div.wrap {
+	 display:block;
+	}
+	input.button-primary{
+		display:none;	
+	}
+}
