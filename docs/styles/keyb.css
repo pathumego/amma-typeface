@@ -1,0 +1,52 @@
+/* CSS Document */
+
+.keyboard {
+	width: 100vw;
+	padding-left: 90px;
+}
+
+
+.keyBlock {
+
+	float: left;
+	margin-right: 10px;
+}
+
+.button {
+	font-family: 'Noto Sans Sinhala', sans-serif;
+	width: 80px;
+  height: 80px;
+	font-size: 22px;
+	background: white;
+	border: 1px solid 000;
+}
+
+.button:hover {
+	background: red;
+	color: white;
+}
+
+.buttonNormal {
+
+}
+.buttonSpecial {
+}
+
+.buttonControl {
+	float: left;
+	height: 80px;
+	display: block;
+}
+
+.backspace {
+	width: 300px;
+
+}
+
+.spacebar {
+	width: 30vw;
+}
+
+.refresh {
+	width: 300px;
+}

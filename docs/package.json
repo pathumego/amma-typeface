@@ -1,0 +1,27 @@
+{
+  "name": "amma-touch-screen-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run app\"",
+    "app": "http-server ./ -p 5051 -c-1",
+    "server": "json-server --watch api.json --port 5050"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkholic/amma-touch-screen-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkholic/amma-touch-screen-demo/issues"
+  },
+  "homepage": "https://github.com/thinkholic/amma-touch-screen-demo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "http-server": "^0.12.3",
+    "json-server": "^0.16.1"
+  }
+}

@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>lib</key>
-		<dict>
-			<key>org.unifiedfontobject.normalizer.imageReferences</key>
-			<dict>
-			</dict>
-			<key>org.unifiedfontobject.normalizer.modTimes</key>
-			<string>version: 0.3.3.dev0
+  <dict>
+    <key>lib</key>
+    <dict>
+      <key>org.unifiedfontobject.normalizer.imageReferences</key>
+      <dict/>
+      <key>org.unifiedfontobject.normalizer.modTimes</key>
+      <string>version: 0.3.3.dev0
 1545110780.5 C_R_.glif
 1545110774.9 _notdef.glif
 1545110780.5 a-sinhala.glif
@@ -177,6 +176,6 @@
 1545110780.5 zero-tamil.glif
 1545110780.6 zerowidthjoiner.glif
 1545110780.5 zerowidthnonjoiner.glif</string>
-		</dict>
-	</dict>
+    </dict>
+  </dict>
 </plist>
