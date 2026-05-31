@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="figuredash" format="2">
+  <advance width="680"/>
+  <unicode hex="2012"/>
+  <note>
+uni2012
+</note>
+  <outline>
+    <contour>
+      <point x="545" y="315" type="line"/>
+      <point x="545" y="415" type="line"/>
+      <point x="135" y="415" type="line"/>
+      <point x="135" y="315" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.75,0.75,0.75,1</string>
+    </dict>
+  </lib>
+</glyph>

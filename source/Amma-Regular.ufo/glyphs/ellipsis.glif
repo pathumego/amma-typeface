@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ellipsis" format="2">
+  <advance width="960"/>
+  <unicode hex="2026"/>
+  <outline>
+    <component base="period" identifier="23D7B0ED"/>
+    <component base="period" xOffset="320" identifier="0760F257"/>
+    <component base="period" xOffset="640" identifier="1AC5486D"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>=period</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>=|</string>
+      <key>public.objectLibs</key>
+      <dict>
+        <key>0760F257</key>
+        <dict>
+          <key>com.schriftgestaltung.alignment</key>
+          <integer>1</integer>
+        </dict>
+        <key>1AC5486D</key>
+        <dict>
+          <key>com.schriftgestaltung.alignment</key>
+          <integer>1</integer>
+        </dict>
+        <key>23D7B0ED</key>
+        <dict>
+          <key>com.schriftgestaltung.alignment</key>
+          <integer>1</integer>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

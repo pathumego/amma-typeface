@@ -40,6 +40,8 @@
     <string>anusvaraya-sinhala.glif</string>
     <key>asabove-tamil</key>
     <string>asabove-tamil.glif</string>
+    <key>asterisk</key>
+    <string>asterisk.glif</string>
     <key>au-sinhala</key>
     <string>au-sinhala.glif</string>
     <key>au-tamil</key>
@@ -56,12 +58,26 @@
     <string>ba-sinhala.glif</string>
     <key>bha-sinhala</key>
     <string>bha-sinhala.glif</string>
+    <key>braceleft</key>
+    <string>braceleft.glif</string>
+    <key>braceright</key>
+    <string>braceright.glif</string>
+    <key>bracketleft</key>
+    <string>bracketleft.glif</string>
+    <key>bracketright</key>
+    <string>bracketright.glif</string>
+    <key>bullet</key>
+    <string>bullet.glif</string>
     <key>ca-sinhala</key>
     <string>ca-sinhala.glif</string>
     <key>ca-tamil</key>
     <string>ca-tamil.glif</string>
     <key>cha-sinhala</key>
     <string>cha-sinhala.glif</string>
+    <key>colon</key>
+    <string>colon.glif</string>
+    <key>comma</key>
+    <string>comma.glif</string>
     <key>credit-tamil</key>
     <string>credit-tamil.glif</string>
     <key>da-sinhala</key>
@@ -96,12 +112,30 @@
     <string>eeM_atra-sinhala.glif</string>
     <key>eeMatra-tamil</key>
     <string>eeM_atra-tamil.glif</string>
+    <key>eight</key>
+    <string>eight.glif</string>
     <key>eight-tamil</key>
     <string>eight-tamil.glif</string>
+    <key>ellipsis</key>
+    <string>ellipsis.glif</string>
+    <key>emdash</key>
+    <string>emdash.glif</string>
+    <key>endash</key>
+    <string>endash.glif</string>
+    <key>exclam</key>
+    <string>exclam.glif</string>
+    <key>exclamdown</key>
+    <string>exclamdown.glif</string>
     <key>fa-sinhala</key>
     <string>fa-sinhala.glif</string>
+    <key>figuredash</key>
+    <string>figuredash.glif</string>
+    <key>five</key>
+    <string>five.glif</string>
     <key>five-tamil</key>
     <string>five-tamil.glif</string>
+    <key>four</key>
+    <string>four.glif</string>
     <key>four-tamil</key>
     <string>four-tamil.glif</string>
     <key>ga-sinhala</key>
@@ -112,6 +146,12 @@
     <string>ha-sinhala.glif</string>
     <key>ha-tamil</key>
     <string>ha-tamil.glif</string>
+    <key>horizontalbar</key>
+    <string>horizontalbar.glif</string>
+    <key>hyphen</key>
+    <string>hyphen.glif</string>
+    <key>hyphentwo</key>
+    <string>hyphentwo.glif</string>
     <key>i-sinhala</key>
     <string>i-sinhala.glif</string>
     <key>i-tamil</key>
@@ -190,6 +230,8 @@
     <string>nga-sinhala.glif</string>
     <key>nga-tamil</key>
     <string>nga-tamil.glif</string>
+    <key>nine</key>
+    <string>nine.glif</string>
     <key>nine-tamil</key>
     <string>nine-tamil.glif</string>
     <key>nna-sinhala</key>
@@ -202,6 +244,8 @@
     <string>nnga-sinhala.glif</string>
     <key>nnna-tamil</key>
     <string>nnna-tamil.glif</string>
+    <key>nonbreakinghyphen</key>
+    <string>nonbreakinghyphen.glif</string>
     <key>number-tamil</key>
     <string>number-tamil.glif</string>
     <key>nya-sinhala</key>
@@ -220,6 +264,8 @@
     <string>oM_atra-tamil.glif</string>
     <key>om-tamil</key>
     <string>om-tamil.glif</string>
+    <key>one</key>
+    <string>one.glif</string>
     <key>one-tamil</key>
     <string>one-tamil.glif</string>
     <key>onehundred-tamil</key>
@@ -238,12 +284,20 @@
     <string>pa-sinhala.glif</string>
     <key>pa-tamil</key>
     <string>pa-tamil.glif</string>
+    <key>parenleft</key>
+    <string>parenleft.glif</string>
+    <key>parenright</key>
+    <string>parenright.glif</string>
     <key>period</key>
     <string>period.glif</string>
+    <key>periodcentered</key>
+    <string>periodcentered.glif</string>
     <key>pha-sinhala</key>
     <string>pha-sinhala.glif</string>
     <key>pulli-tamil</key>
     <string>pulli-tamil.glif</string>
+    <key>question</key>
+    <string>question.glif</string>
     <key>rVocalic-sinhala</key>
     <string>rV_ocalic-sinhala.glif</string>
     <key>rVocalicMatra-sinhala</key>
@@ -264,6 +318,10 @@
     <string>sa-sinhala.glif</string>
     <key>sa-tamil</key>
     <string>sa-tamil.glif</string>
+    <key>semicolon</key>
+    <string>semicolon.glif</string>
+    <key>seven</key>
+    <string>seven.glif</string>
     <key>seven-tamil</key>
     <string>seven-tamil.glif</string>
     <key>sha-sinhala</key>
@@ -274,8 +332,12 @@
     <string>sha_pulli_ra_iiM_atra-tamil.glif</string>
     <key>sinMatraOo.pstf</key>
     <string>sinM_atraO_o.pstf.glif</string>
+    <key>six</key>
+    <string>six.glif</string>
     <key>six-tamil</key>
     <string>six-tamil.glif</string>
+    <key>softhyphen</key>
+    <string>softhyphen.glif</string>
     <key>space</key>
     <string>space.glif</string>
     <key>ssa-sinhala</key>
@@ -292,6 +354,8 @@
     <string>ten-tamil.glif</string>
     <key>tha-sinhala</key>
     <string>tha-sinhala.glif</string>
+    <key>three</key>
+    <string>three.glif</string>
     <key>three-tamil</key>
     <string>three-tamil.glif</string>
     <key>tta-sinhala</key>
@@ -300,6 +364,8 @@
     <string>tta-tamil.glif</string>
     <key>ttha-sinhala</key>
     <string>ttha-sinhala.glif</string>
+    <key>two</key>
+    <string>two.glif</string>
     <key>two-tamil</key>
     <string>two-tamil.glif</string>
     <key>u-sinhala</key>
@@ -332,6 +398,8 @@
     <string>ya-tamil.glif</string>
     <key>year-tamil</key>
     <string>year-tamil.glif</string>
+    <key>zero</key>
+    <string>zero.glif</string>
     <key>zero-tamil</key>
     <string>zero-tamil.glif</string>
     <key>zerowidthjoiner</key>
